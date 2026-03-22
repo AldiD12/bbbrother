@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Manrope:wght@400;500;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-surface": "#2f3130",
+                        "secondary-container": "#fdad67",
+                        "surface-container": "#efeeec",
+                        "on-secondary-fixed": "#2e1500",
+                        "tertiary-fixed-dim": "#bac7e2",
+                        "surface-container-high": "#e9e8e6",
+                        "on-primary-container": "#fefcff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#fefcff",
+                        "surface-tint": "#525f76",
+                        "on-surface-variant": "#524439",
+                        "on-tertiary-fixed": "#0e1c30",
+                        "on-background": "#1b1c1b",
+                        "inverse-on-surface": "#f2f1ef",
+                        "surface-variant": "#e3e2e0",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#d5e3ff",
+                        "surface-bright": "#faf9f7",
+                        "secondary": "#b87333", // Bronze/Copper from Brand Anchors
+                        "surface": "#faf9f7",
+                        "primary-fixed": "#d5e3ff",
+                        "on-secondary-container": "#763f00",
+                        "outline-variant": "#d8c3b4",
+                        "on-primary-fixed": "#0e1c30",
+                        "surface-container-low": "#f4f3f1",
+                        "primary-container": "#68758d",
+                        "on-surface": "#1b1c1b",
+                        "primary-fixed-dim": "#bac7e2",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#68758d",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#3a475d",
+                        "secondary-fixed-dim": "#ffb77b",
+                        "primary": "#0c1a2e", // Deep Navy from Brand Anchors
+                        "background": "#faf9f7",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#dbdad8",
+                        "inverse-primary": "#bac7e2",
+                        "on-primary-fixed-variant": "#3a475d",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#6d3a00",
+                        "outline": "#857467",
+                        "tertiary": "#4f5c74",
+                        "secondary-fixed": "#ffdcc2"
+                    },
+                    fontFamily: {
+                        "headline": ["Epilogue"],
+                        "body": ["Noto Serif"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .hand-drawn-underline {
+            position: relative;
+            display: inline-block;
+        }
+
+        .hand-drawn-underline::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 100%;
+            height: 8px;
+            background: currentColor;
+            opacity: 0.3;
+            border-radius: 100%;
+            transform: rotate(-1deg);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/30">
+    <!-- TopAppBar Navigation Shell -->
+    <nav
+        class="bg-[#faf9f7]/85 dark:bg-[#0c1a2e]/85 backdrop-blur-md text-[#0c1a2e] dark:text-[#f0efed] font-['Epilogue'] font-bold tracking-tight fixed top-0 w-full z-50 no-border tonal-layering flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+        <div class="text-xl font-black text-[#0c1a2e] dark:text-[#f0efed] uppercase tracking-tighter">
+            BBBrotherBuilding
+        </div>
+        <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+        </div>
+    </nav>
+    <main class="pt-24 overflow-x-hidden">
+        <!-- Hero Section -->
+        <section class="px-6 mb-[100px]">
+            <h1 class="font-headline text-[2.75rem] leading-[1.1] tracking-tight font-black mb-6 text-primary">
+                Building Your <span class="text-secondary italic hand-drawn-underline">Vision</span>, From Foundation to
+                Finish
+            </h1>
+            <p class="text-[18px] text-[#4a4a4a] mb-8 leading-relaxed max-w-[320px]">
+                High-end construction and architectural excellence delivered with integrity across London and beyond.
+            </p>
+            <div class="flex flex-col gap-6">
+                <a class="bg-secondary text-white font-label font-bold py-5 px-8 rounded-full text-center inline-flex items-center justify-center gap-2 transition-transform active:scale-95"
+                    href="#">
+                    Get a Free Quote <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                </a>
+                <!-- Trust Proof Row -->
+                <div class="flex items-center gap-3">
+                    <div class="flex -space-x-3">
+                        <img class="w-10 h-10 rounded-full border-2 border-surface object-cover"
+                            data-alt="Client profile portrait"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgjs2FQgBU6IRXshGCLZuhfQAaUqPwzH79WAGSAOROnuyzk9tTEU5nzMi-bCuVFcGmxK3QBYWB7AAFPDU4-2Na21Hzb27z52JD8svmXE-TBnNGRQsW5FktvsH3sGDmg7uDxwO6r-nGFmoRByaHxRmVdAjl52JsIhHsPhNtIUEwWHUHm28glhNvGaTugCx3xyW1NfbFTxUM4BJDevpD6-a-Y89R9eoHGWuJdVUlS2zAR23GMFKwbep4mwGyazcs-1aJEuf86mUeBL8" />
+                        <img class="w-10 h-10 rounded-full border-2 border-surface object-cover"
+                            data-alt="Client profile portrait woman"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe0-dAHpEzAxi--p4yTWsvhRACaoe9F3BqzhP-2aSCiKwK63ehn3EKgO_UoDC2_N4LzNyeLc2T-fHTJsnf-qm7zfEB2lo7VbPABdsMyIri8tNCl1TJYk5wl1ezc1xJ7tC8K5Vimxw1IUBZz7GgjzX6W4lCyePxD2owEp5WOGqSTJawuHa910N9XZcy3D1-sG6xHaPjtrpOvvP0u3KV_Lzw5n_tzkYyyWxLiZQenVEan7a7Tt8mi5MXqmX5q6ZkzflVyCuxebT-T-E" />
+                        <img class="w-10 h-10 rounded-full border-2 border-surface object-cover"
+                            data-alt="Client profile portrait man smiling"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS49vi_0MtHaQ-KuJrn1yLtnx1hP9_BryfDVJ6ERmZFWTnhCJvg0CiNpBUjfZ1M9Q0kSzqF9rXFKB9dOk90vpt2lrnld7EcEb_5ZPM6_twKCkqAqDFCgb0cQ15ZMHbmsWCHELY7BiIQJXm9zRy7qVdkiCOYkEt7uWr1hYPmWZCQYe5XsC3tavVkaC5FyWyHMam133WEJ7vEtGMEu3Gj1QjilhNw4xdwQHHMTiKoDINDYF6K_qAT_kUanv_EZZy8NCH3J609yh_24k" />
+                    </div>
+                    <div class="text-sm font-label font-bold">
+                        <div class="flex items-center gap-1 text-secondary">
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span>10/10 on Checkatrade</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12">
+                <img class="w-full aspect-[4/3] object-cover rounded-lg"
+                    data-alt="Luxury modern home exterior architecture"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2myzcGQvnFCzrhAjtuUfkeqFPA2491fNa2v0VMqwqVZDJnXn2wRpBfhjJpaV5rTZzpJoIwAGYxxjqO4c9SW3EikVJNyLy5GW5SEI6Xwq9do6mVZT5Y0hSJeoFhjJomRY53cE7YRGT7WYpYmbZ5hg3XQSj2wcDRDbwPFGkfeDtbVra8a1XQ-Oz2wpilxegDjMG1v9yWwD-M89IUUm4IAJSYp7fzJgYKfdMFVBjaQB618SvsI1yEIJrz53gzubP_VtxMIlbF1PgNaE" />
+            </div>
+        </section>
+        <!-- Trust Bar -->
+        <section class="bg-surface-container-low py-10 mb-[100px]">
+            <p class="text-center font-label text-[10px] uppercase tracking-[0.2em] font-bold text-on-surface/60 mb-8">
+                Our story of 10/10 rated projects on Checkatrade
+            </p>
+            <div class="flex justify-around items-center px-6 grayscale opacity-40">
+                <div class="h-8 w-24 bg-on-surface/20 rounded-md"></div>
+                <div class="h-8 w-24 bg-on-surface/20 rounded-md"></div>
+                <div class="h-8 w-24 bg-on-surface/20 rounded-md"></div>
+            </div>
+        </section>
+        <!-- Years of Building Trust -->
+        <section class="px-6 mb-[100px]">
+            <h2 class="font-body text-4xl font-bold mb-12 leading-tight tracking-tight">
+                12 Years of Building Trust and Quality
+            </h2>
+            <div class="grid grid-cols-2 gap-x-8 gap-y-12">
+                <div class="flex flex-col">
+                    <span class="font-headline text-5xl font-black text-primary tracking-tighter">12+</span>
+                    <span class="font-label text-[10px] uppercase tracking-widest text-on-surface/60 mt-2">Years
+                        Exp.</span>
+                </div>
+                <div class="flex flex-col">
+                    <span
+                        class="font-headline text-5xl font-black text-primary tracking-tighter text-secondary">10/10</span>
+                    <span class="font-label text-[10px] uppercase tracking-widest text-on-surface/60 mt-2">Client
+                        Rating</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-headline text-5xl font-black text-primary tracking-tighter">£10M</span>
+                    <span class="font-label text-[10px] uppercase tracking-widest text-on-surface/60 mt-2">Project
+                        Value</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-headline text-5xl font-black text-primary tracking-tighter">2yr</span>
+                    <span class="font-label text-[10px] uppercase tracking-widest text-on-surface/60 mt-2">Work
+                        Warranty</span>
+                </div>
+            </div>
+        </section>
+        <!-- What We Build -->
+        <section class="mb-[100px]">
+            <div class="px-6 mb-8 flex justify-between items-end">
+                <h2 class="font-body text-4xl font-bold tracking-tight">What We Build</h2>
+                <div class="flex gap-2">
+                    <div
+                        class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface/40">
+                        <span class="material-symbols-outlined">west</span>
+                    </div>
+                    <div
+                        class="w-10 h-10 rounded-full border border-secondary flex items-center justify-center text-secondary">
+                        <span class="material-symbols-outlined">east</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex overflow-x-auto gap-4 px-6 no-scrollbar snap-x">
+                <!-- Card 1 -->
+                <div class="flex-none w-[280px] snap-center group">
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img class="w-full aspect-[3/4] object-cover" data-alt="Luxury loft conversion interior"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSszSV-i6fiStu6-JdibXru4DBqlIAeBJdpFQnly543vHND52dXp1fnzBW2leoTiD-qtGp7t_cezZbr0PcZygJLs1JrBpPRBIaJ7QTBYqNUSpMVkrZvCupv43kreanMj1ns4vyjX8PF3UjvqyneT4LSaLGhrQHfU20ResMcKobNTdQ7UswaieOvx3tXrZES15okHGGn-loJp2gd2mJpiMFTyGhRzb5ChxKgWL3dWUtwEhiWBKl--s7nJScI-_Ev-X4vuEmkRZKXqQ" />
+                        <div
+                            class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                            <span class="material-symbols-outlined">north_east</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full bg-primary p-5">
+                            <div class="flex items-center gap-3 text-white mb-1">
+                                <span class="material-symbols-outlined text-secondary"
+                                    data-icon="apartment">apartment</span>
+                                <h3 class="font-headline font-bold text-lg">Loft Conversions</h3>
+                            </div>
+                            <p class="text-white/70 text-sm font-label">Maximizing vertical potential.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="flex-none w-[280px] snap-center group">
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img class="w-full aspect-[3/4] object-cover" data-alt="Modern house extension with glass"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVk-7hnukOzjaEzIBK3TrtzssdptoI7vUZ-PHDQ6B3knfVoglavusciniLAdnAAbFPEe7QCpTLsz0qXG10HfA3kh7IXI9g8lxEJZViL30jvfvtnaE1wyV7Sziye14f6qAAR25J5WCcmPvYhMmrpZVDwl_vd-GPDNq0nYCm5zmLTHPipyBjzgsbU9Dam-zqGIgxpyCl1pznNUF9RrV4v1VPzo1tgeBTu1zWnwkdFeDnOOkkN3coJUBoryNkxXQvwuXdZfjWaQf1cKs" />
+                        <div
+                            class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">north_east</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full bg-primary p-5">
+                            <div class="flex items-center gap-3 text-white mb-1">
+                                <span class="material-symbols-outlined text-secondary" data-icon="house">house</span>
+                                <h3 class="font-headline font-bold text-lg">Extensions</h3>
+                            </div>
+                            <p class="text-white/70 text-sm font-label">Seamless living space expansion.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="flex-none w-[280px] snap-center group">
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img class="w-full aspect-[3/4] object-cover" data-alt="High end kitchen renovation"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Pn0u6df1WnAyKsVEXOK1TtaJE6Krhitv68rm9FE9cTaWXCvwXaJ94c_YiiU8r5c6ktP7JFUUhGKSh0Y-jdyHvhGJSP-OhzwucSu3cLuA6LZ6auapfr6W2puvRmsIZI5y1gx7dY6nyBg6GEDSy7OPz8TtPEUI7o4_0ifRrp__NFsfBfvQnQFA4sVJkncfqMHSuisQ4ZxJKd2BJp2o4GequsNEQJcVpxr66jfRTY3GcE3DrR-O876KCAzlDiBot1pdZsFUEkKuBl4" />
+                        <div
+                            class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">north_east</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full bg-primary p-5">
+                            <div class="flex items-center gap-3 text-white mb-1">
+                                <span class="material-symbols-outlined text-secondary"
+                                    data-icon="design_services">design_services</span>
+                                <h3 class="font-headline font-bold text-lg">Renovations</h3>
+                            </div>
+                            <p class="text-white/70 text-sm font-label">Transforming old into extraordinary.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Real Results -->
+        <section class="px-6 mb-[100px]">
+            <h2 class="font-body text-4xl font-bold mb-10 tracking-tight">Real Results</h2>
+            <div class="flex flex-col gap-16">
+                <!-- Project 1 -->
+                <div class="flex flex-col">
+                    <img class="w-full aspect-video object-cover rounded-lg mb-6"
+                        data-alt="Modern minimal white villa exterior"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhvDp3txPUBsBWG3tuTCkB-89O4KW9ttiIMtrVUO1KrVlaqESy8oTd8j4Matri6zQc7_QXAa6Fzo1uWqDD0S2CUI-YZ9-YjcZ182mXAz5dBjtFJeYxuCOBu5V4XzwFGGnBOT7LH6j7XlsxIt2ux1MMXUhLNbtar3iVI2Mr95S_sppnsESKhZ9IrvGHk4rK1njOoLkqpBcYaBVTt5LN_IiVynuQgCwiHcXlhn-PblGauTUYqY5p9XGsGdtGq0b1SNLUg0o8W0KxihM" />
+                    <div class="flex flex-col">
+                        <h3 class="font-headline text-2xl font-bold text-primary mb-3">Chelsea Modern Villa</h3>
+                        <p class="text-[#4a4a4a] text-lg mb-6 font-body leading-relaxed">A complete transformation of a
+                            Victorian townhouse into a 5-bedroom modern masterpiece.</p>
+                        <div class="flex gap-8">
+                            <div>
+                                <p class="font-label text-[10px] uppercase tracking-widest text-on-surface/40">Duration
+                                </p>
+                                <p class="font-headline font-bold text-lg">14 Months</p>
+                            </div>
+                            <div>
+                                <p class="font-label text-[10px] uppercase tracking-widest text-on-surface/40">
+                                    Efficiency</p>
+                                <p class="font-headline font-bold text-lg text-secondary">A+ Energy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="flex flex-col">
+                    <img class="w-full aspect-video object-cover rounded-lg mb-6"
+                        data-alt="Open plan contemporary kitchen with island"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD9pI3IZJWxZGvZ77WknOCChdJ0IGX7qcVUx07Yii5k3cuXEwV0hy2k2vGi-xPje3qdNhHVQRV6m--3AJpEtzEHuHmT4-y4KGmeR6vMuZbakgWHHeTnbv6uFk8UfqTu7S1SImQN49hsCgy-joIP4IBdmMul0P63nZXfTbLJndQdd-sBws7GrLCVNpEe3X58snQ_rhY8UT4JTTo3e08euAva9ly5kDHM7kJYwhdg8Kta2Z8Zt4xzJ4zm5INe2zz3cLwdSDE8HJfznA" />
+                    <div class="flex flex-col">
+                        <h3 class="font-headline text-2xl font-bold text-primary mb-3">Richmond Extension</h3>
+                        <p class="text-[#4a4a4a] text-lg mb-6 font-body leading-relaxed">Expansive rear extension
+                            featuring bespoke glass folding doors and polished concrete floors.</p>
+                        <div class="flex gap-8">
+                            <div>
+                                <p class="font-label text-[10px] uppercase tracking-widest text-on-surface/40">Duration
+                                </p>
+                                <p class="font-headline font-bold text-lg">6 Months</p>
+                            </div>
+                            <div>
+                                <p class="font-label text-[10px] uppercase tracking-widest text-on-surface/40">Value
+                                    Added</p>
+                                <p class="font-headline font-bold text-lg text-secondary">+25% Market</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial -->
+        <section class="bg-surface-container-low py-20 px-6 mb-[100px]">
+            <div class="max-w-md mx-auto">
+                <span class="material-symbols-outlined text-secondary text-5xl mb-8"
+                    style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                <blockquote class="font-body text-2xl font-medium leading-relaxed italic text-primary mb-8">
+                    "BBBrotherBuilding transformed our home beyond our wildest expectations. Their attention to detail
+                    and project management made the entire process stress-free."
+                </blockquote>
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="font-headline font-bold text-lg">David Harrison</p>
+                        <p
+                            class="font-label text-[10px] uppercase tracking-widest text-secondary flex items-center gap-1">
+                            <span class="material-symbols-outlined text-xs"
+                                style="font-variation-settings: 'FILL' 1;">verified</span>
+                            Checkatrade Verified
+                        </p>
+                    </div>
+                    <div class="flex gap-2">
+                        <div
+                            class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface/40">
+                            <span class="material-symbols-outlined">west</span>
+                        </div>
+                        <div
+                            class="w-12 h-12 rounded-full border border-primary flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">east</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us -->
+        <section class="px-6 mb-[100px]">
+            <h2 class="font-body text-4xl font-bold mb-6 tracking-tight">about us</h2>
+            <div class="flex flex-col gap-8">
+                <img class="w-full aspect-square object-cover rounded-lg"
+                    data-alt="Besart Dishani founder on construction site"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe56af03IXQvtzlgwWIgCnHXhl7fjgp8fdy_nJxugrTJTKiXg1GHgAqazx57D7_Vz3RA92Gyh1fU0OBfajb_uE275mdukgCKpa0Cxa7AqL6khein8_rBU9C_ybi7YKPs2DqP3C4VvsvQRtaYD6xg88LFzk8kZgWxpo8FSXTvaimbf3wjl5m5tP_st2g7vs8MayC7j6BgbeaVjRSguX53H_C3qkUhKLU3jqgInX-QrMFK8A45jD4w7Zf6HSoHhbXPaqf0ZPu6unW8o" />
+                <div class="flex flex-col">
+                    <p class="text-[#4a4a4a] text-lg font-body leading-relaxed mb-6">
+                        Founded by Besart Dishani, BBBrotherBuilding Ltd is built on the philosophy of architectural
+                        integrity. We don't just build structures; we build relationships based on transparency,
+                        quality, and precision.
+                    </p>
+                    <a class="font-headline font-bold text-primary flex items-center gap-2 group underline decoration-2 underline-offset-8 decoration-secondary"
+                        href="#">
+                        Meet Our Team <span
+                            class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="relative bg-primary py-24 px-6 mb-[100px] overflow-hidden rounded-lg mx-6">
+            <div class="absolute inset-0 opacity-10 grayscale mix-blend-overlay">
+                <img class="w-full h-full object-cover" data-alt="Construction site architectural details"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBChbJEttluQ8w5sjF2AOO-6zC_pkH1itA3pKIRjonr4SbqLdzGvKjB86-JHrUyL-wRXiMt-Odh4sbQXLd8AmU-CC04ueNyzBP0np9AU-rK2-YJLao2bziBK8XTw6qHvv9aExt6R4fwRRe_stuHl_1VfVshT6fSiXYuGx85Q-Ka-y7bHTursfENe4xnPuil-xvZBXn-YeUjzTNWH-mfGV57W-lJUmkHb9wnVXjm-mUab532TJ8TWfFhOEwQFeHysg38ta9l0bJxQ18" />
+            </div>
+            <div class="relative z-10 text-center">
+                <h2 class="font-headline text-3xl font-black text-white mb-6 leading-tight">Ready to Start Your Project?
+                </h2>
+                <p class="text-white/80 text-lg font-body mb-10 max-w-[280px] mx-auto">Let's discuss your vision and
+                    turn it into a concrete reality. Consultations are free.</p>
+                <a class="bg-secondary text-white font-label font-bold py-5 px-10 rounded-full inline-block transition-transform active:scale-95"
+                    href="#">
+                    Start Your Quote
+                </a>
+            </div>
+        </section>
+        <!-- Footer Shell -->
+        <footer class="bg-[#f4f3f1] dark:bg-[#0c1a2e] w-full pt-20 pb-32 md:pb-20 tonal-shift-bg">
+            <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <div class="text-2xl font-black text-[#0c1a2e] dark:text-[#f0efed] mb-4 uppercase">BBBrotherBuilding
+                    </div>
+                    <p class="font-['Noto_Serif'] text-[#0c1a2e]/70 dark:text-[#f0efed]/70">Excellence in architectural
+                        construction, serving homeowners who demand integrity.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="flex flex-col gap-3">
+                        <span class="font-['Manrope'] font-bold uppercase tracking-widest text-xs mb-2">Company</span>
+                        <a class="text-[#0c1a2e]/70 dark:text-[#f0efed]/70 hover:text-[#b87333] transition-all"
+                            href="#">Home</a>
+                        <a class="text-[#0c1a2e]/70 dark:text-[#f0efed]/70 hover:text-[#b87333] transition-all"
+                            href="#">Projects</a>
+                        <a class="text-[#0c1a2e]/70 dark:text-[#f0efed]/70 hover:text-[#b87333] transition-all"
+                            href="#">Services</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <span class="font-['Manrope'] font-bold uppercase tracking-widest text-xs mb-2">Location</span>
+                        <p class="text-[#0c1a2e]/70 dark:text-[#f0efed]/70">London</p>
+                        <p class="text-[#0c1a2e]/70 dark:text-[#f0efed]/70">Surrey</p>
+                        <p class="text-[#0c1a2e]/70 dark:text-[#f0efed]/70">Kent</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-sm font-['Manrope'] font-bold text-[#0c1a2e]/50">© 2024 BBBrotherBuilding Ltd.
+                        Architectural Integrity.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- BottomNavBar / Mobile Sticky Footer -->
+    <div
+        class="fixed bottom-0 left-0 w-full grid grid-cols-2 md:hidden z-50 bg-[#0c1a2e] border-t border-[#b87333]/20 shadow-[0_-4px_20px_0_rgba(0,0,0,0.1)]">
+        <!-- WhatsApp -->
+        <a class="flex flex-col items-center justify-center py-3 bg-[#25D366] text-white active:scale-95 transition-transform"
+            href="https://wa.me/yournumber">
+            <span class="material-symbols-outlined mb-1" data-icon="chat">chat</span>
+            <span class="font-['Manrope'] text-[10px] uppercase tracking-[0.1em] font-bold">WhatsApp</span>
+        </a>
+        <!-- Call Now -->
+        <a class="flex flex-col items-center justify-center bg-[#b87333] text-white py-3 active:scale-95 transition-transform"
+            href="tel:yournumber">
+            <span class="material-symbols-outlined mb-1" data-icon="call">call</span>
+            <span class="font-['Manrope'] text-[10px] uppercase tracking-[0.1em] font-bold">Call Now</span>
+        </a>
+    </div>
+</body>
+
+</html>
