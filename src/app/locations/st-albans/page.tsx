@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { LocationPage } from "@/components/LocationPage";
+import { getLocationBySlug } from "@/data/locations";
+
+const locationData = getLocationBySlug("st-albans")!;
 
 export const metadata: Metadata = {
   title: "Builders in St Albans | Extensions & Lofts | BBBrotherBuilding",
@@ -13,7 +16,8 @@ export const metadata: Metadata = {
 export default function StAlbansPage() {
   return (
     <LocationPage
-      location="St Albans"
+      location={locationData.name}
+      locationData={locationData}
       description="BBBrotherBuilding delivers high-quality extensions, loft conversions, kitchen fitting, and bathroom renovations across St Albans and the surrounding areas. As a Companies House registered limited company with £10 million insurance and a 10/10 Checkatrade rating, we bring the reliability and craftsmanship that St Albans homeowners expect. One team from foundations to finish, no subcontractor surprises."
       heroImage="/images/exterior_extension_finished_roof_back_view.jpeg"
       galleryImages={[

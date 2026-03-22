@@ -4,9 +4,19 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { MobileStickyFooter } from "@/components/MobileStickyFooter";
 import { OrganizationSchema } from "@/components/OrganizationSchema";
+import { CookieConsent } from "@/components/CookieConsent";
+import { Analytics } from "@/components/Analytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bbbrotherbuilding.co.uk"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
 };
 
 export default function RootLayout({
@@ -26,10 +36,12 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased selection:bg-secondary/30">
         <OrganizationSchema />
+        <Analytics />
         <Navbar />
         <main className="pt-24 overflow-x-hidden">{children}</main>
         <Footer />
         <MobileStickyFooter />
+        <CookieConsent />
       </body>
     </html>
   );

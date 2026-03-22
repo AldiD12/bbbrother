@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { LocationPage } from "@/components/LocationPage";
+import { getLocationBySlug } from "@/data/locations";
+
+const locationData = getLocationBySlug("edgware")!;
 
 export const metadata: Metadata = {
   title: "Builders in Edgware | Extensions & Lofts | BBBrotherBuilding",
@@ -13,7 +16,8 @@ export const metadata: Metadata = {
 export default function EdgwarePage() {
   return (
     <LocationPage
-      location="Edgware"
+      location={locationData.name}
+      locationData={locationData}
       description="BBBrotherBuilding provides expert building services throughout Edgware and the surrounding North London area. Whether you need a rear extension to open up your kitchen-diner, a loft conversion for extra bedrooms, or a complete bathroom overhaul, our experienced in-house team delivers every project to the highest standard. Ltd company, £10M insured, and rated 10/10 on Checkatrade."
       heroImage="/images/interior_bathroom_complete_tub_shower_tiling.jpeg"
       galleryImages={[

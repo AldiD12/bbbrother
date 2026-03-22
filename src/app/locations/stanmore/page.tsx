@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { LocationPage } from "@/components/LocationPage";
+import { getLocationBySlug } from "@/data/locations";
+
+const locationData = getLocationBySlug("stanmore")!;
 
 export const metadata: Metadata = {
   title: "Builders in Stanmore | Extensions & Lofts | BBBrotherBuilding",
@@ -13,7 +16,8 @@ export const metadata: Metadata = {
 export default function StanmorePage() {
   return (
     <LocationPage
-      location="Stanmore"
+      location={locationData.name}
+      locationData={locationData}
       description="Stanmore homeowners trust BBBrotherBuilding for extensions, loft conversions, kitchen fitting, and bathroom renovations that add real value to their properties. As a registered limited company with over 12 years of experience, we manage every project with a single dedicated team — no subcontractors, no surprises. Fully backed by £10 million insurance and our 2-year guarantee."
       heroImage="/images/exterior_front_driveway_complete_block_paving_view.jpeg"
       galleryImages={[

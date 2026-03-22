@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { LocationPage } from "@/components/LocationPage";
+import { getLocationBySlug } from "@/data/locations";
+
+const locationData = getLocationBySlug("watford")!;
 
 export const metadata: Metadata = {
   title: "Builders in Watford | Extensions & Lofts | BBBrotherBuilding",
@@ -13,7 +16,8 @@ export const metadata: Metadata = {
 export default function WatfordPage() {
   return (
     <LocationPage
-      location="Watford"
+      location={locationData.name}
+      locationData={locationData}
       description="From Victorian terraces to modern new-builds, BBBrotherBuilding has been transforming homes across Watford for over 12 years. We specialise in extensions, loft conversions, complete kitchen installations, and bathroom renovations. Fully insured with £10 million cover, Checkatrade verified with a 10/10 rating, and backed by our 2-year workmanship guarantee."
       heroImage="/images/interior_kitchen_islands_cabinets_marble_flooring_complete.jpeg"
       galleryImages={[

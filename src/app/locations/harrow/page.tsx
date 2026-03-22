@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { LocationPage } from "@/components/LocationPage";
+import { getLocationBySlug } from "@/data/locations";
+
+const locationData = getLocationBySlug("harrow")!;
 
 export const metadata: Metadata = {
   title: "Builders in Harrow | Extensions & Lofts | BBBrotherBuilding",
@@ -13,7 +16,8 @@ export const metadata: Metadata = {
 export default function HarrowPage() {
   return (
     <LocationPage
-      location="Harrow"
+      location={locationData.name}
+      locationData={locationData}
       description="BBBrotherBuilding has been delivering outstanding extensions, loft conversions, and home renovations to Harrow homeowners for over a decade. From period properties in Harrow on the Hill to semi-detached homes across the borough, our in-house team handles every aspect of your build. Registered limited company, £10M insured, and rated 10/10 on Checkatrade."
       heroImage="/images/interior_kitchen_islands_cabinets_marble_flooring_complete.jpeg"
       galleryImages={[
