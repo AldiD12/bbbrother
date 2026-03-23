@@ -2,11 +2,22 @@ import type { Metadata } from "next";
 import { QuoteForm } from "@/components/QuoteForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Free Quote | BBBrotherBuilding",
+  title: "Contact BBBrotherBuilding | Free Quote | Hertfordshire",
   description:
     "Get a free site survey and fixed-price quotation for your extension, loft conversion, or renovation in Hertfordshire & North West London. Call 07925 921 222.",
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/contact",
+  },
+  openGraph: {
+    title: "Contact BBBrotherBuilding | Free Quote | Hertfordshire",
+    description:
+      "Get a free site survey and fixed-price quotation for your extension, loft conversion, or renovation in Hertfordshire & North West London. Call 07925 921 222.",
+    url: "https://bbbrotherbuilding.co.uk/contact",
+  },
+  twitter: {
+    title: "Contact BBBrotherBuilding | Free Quote | Hertfordshire",
+    description:
+      "Get a free site survey and fixed-price quotation for your extension, loft conversion, or renovation in Hertfordshire & North West London. Call 07925 921 222.",
   },
 };
 

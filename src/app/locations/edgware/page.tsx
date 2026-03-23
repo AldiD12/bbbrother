@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/locations/edgware",
   },
+  openGraph: {
+    title: "Builders in Edgware | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Edgware for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+    url: "https://bbbrotherbuilding.co.uk/locations/edgware",
+  },
+  twitter: {
+    title: "Builders in Edgware | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Edgware for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+  },
 };
 
 export default function EdgwarePage() {

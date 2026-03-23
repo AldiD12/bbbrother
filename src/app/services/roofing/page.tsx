@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/services/roofing",
   },
+  openGraph: {
+    title: "Roofing Services Hertfordshire | BBBrotherBuilding",
+    description:
+      "New roofs, roof repairs, flat roofing, and guttering for extensions and renovations. Watertight results guaranteed.",
+    url: "https://bbbrotherbuilding.co.uk/services/roofing",
+  },
+  twitter: {
+    title: "Roofing Services Hertfordshire | BBBrotherBuilding",
+    description:
+      "New roofs, roof repairs, flat roofing, and guttering for extensions and renovations. Watertight results guaranteed.",
+  },
 };
 
 export default function RoofingPage() {

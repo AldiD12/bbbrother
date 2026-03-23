@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/services/loft-conversions",
   },
+  openGraph: {
+    title: "Loft Conversions Hertfordshire | BBBrotherBuilding",
+    description:
+      "Dormer, hip-to-gable, and mansard loft conversions in Hertfordshire. Maximise your home's potential with a beautifully finished additional floor. Ltd company, £10M insured, 10/10 Checkatrade.",
+    url: "https://bbbrotherbuilding.co.uk/services/loft-conversions",
+  },
+  twitter: {
+    title: "Loft Conversions Hertfordshire | BBBrotherBuilding",
+    description:
+      "Dormer, hip-to-gable, and mansard loft conversions in Hertfordshire. Maximise your home's potential with a beautifully finished additional floor. Ltd company, £10M insured, 10/10 Checkatrade.",
+  },
 };
 
 export default function LoftConversionsPage() {

@@ -9,6 +9,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/services",
   },
+  openGraph: {
+    title: "Our Services | BBBrotherBuilding",
+    description:
+      "Extensions, loft conversions, bathrooms, kitchens, plastering, roofing & renovations in Hertfordshire & North West London. Free quotes from BBBrotherBuilding.",
+    url: "https://bbbrotherbuilding.co.uk/services",
+  },
+  twitter: {
+    title: "Our Services | BBBrotherBuilding",
+    description:
+      "Extensions, loft conversions, bathrooms, kitchens, plastering, roofing & renovations in Hertfordshire & North West London. Free quotes from BBBrotherBuilding.",
+  },
 };
 
 const services = [

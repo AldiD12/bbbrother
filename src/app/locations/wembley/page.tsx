@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/locations/wembley",
   },
+  openGraph: {
+    title: "Builders in Wembley | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Wembley for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+    url: "https://bbbrotherbuilding.co.uk/locations/wembley",
+  },
+  twitter: {
+    title: "Builders in Wembley | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Wembley for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+  },
 };
 
 export default function WembleyPage() {

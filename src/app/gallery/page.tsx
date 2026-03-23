@@ -9,6 +9,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/gallery",
   },
+  openGraph: {
+    title: "Gallery | Our Work | BBBrotherBuilding",
+    description:
+      "Browse our portfolio of extensions, loft conversions, kitchens, bathrooms, driveways, and interior finishing across Hertfordshire & North West London.",
+    url: "https://bbbrotherbuilding.co.uk/gallery",
+  },
+  twitter: {
+    title: "Gallery | Our Work | BBBrotherBuilding",
+    description:
+      "Browse our portfolio of extensions, loft conversions, kitchens, bathrooms, driveways, and interior finishing across Hertfordshire & North West London.",
+  },
 };
 
 const categories = [

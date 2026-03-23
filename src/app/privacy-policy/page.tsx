@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/privacy-policy",
   },
+  openGraph: {
+    title: "Privacy Policy | BBBrotherBuilding",
+    description:
+      "Privacy policy for BBBrotherBuilding Ltd. Learn how we collect, use, and protect your personal data in compliance with GDPR.",
+    url: "https://bbbrotherbuilding.co.uk/privacy-policy",
+  },
+  twitter: {
+    title: "Privacy Policy | BBBrotherBuilding",
+    description:
+      "Privacy policy for BBBrotherBuilding Ltd. Learn how we collect, use, and protect your personal data in compliance with GDPR.",
+  },
 };
 
 export default function PrivacyPolicyPage() {

@@ -10,6 +10,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/",
   },
+  openGraph: {
+    title: "Builders in Hertfordshire | Extensions & Lofts | BBBrother",
+    description:
+      "Extensions, loft conversions & renovations in Hertfordshire. 10/10 on Checkatrade. Ltd company. £10M insured. 2-year guarantee. Free quotes.",
+    url: "https://bbbrotherbuilding.co.uk/",
+  },
+  twitter: {
+    title: "Builders in Hertfordshire | Extensions & Lofts | BBBrother",
+    description:
+      "Extensions, loft conversions & renovations in Hertfordshire. 10/10 on Checkatrade. Ltd company. £10M insured. 2-year guarantee. Free quotes.",
+  },
 };
 
 const services = [

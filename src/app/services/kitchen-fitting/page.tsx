@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/services/kitchen-fitting",
   },
+  openGraph: {
+    title: "Kitchen Fitting Hertfordshire | BBBrotherBuilding",
+    description:
+      "Full kitchen fitting in Hertfordshire including plumbing, electrics, tiling, and worktop installation. From design consultation to the final reveal. Ltd company, £10M insured, 10/10 Checkatrade.",
+    url: "https://bbbrotherbuilding.co.uk/services/kitchen-fitting",
+  },
+  twitter: {
+    title: "Kitchen Fitting Hertfordshire | BBBrotherBuilding",
+    description:
+      "Full kitchen fitting in Hertfordshire including plumbing, electrics, tiling, and worktop installation. From design consultation to the final reveal. Ltd company, £10M insured, 10/10 Checkatrade.",
+  },
 };
 
 export default function KitchenFittingPage() {

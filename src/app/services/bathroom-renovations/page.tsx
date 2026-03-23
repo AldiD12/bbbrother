@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/services/bathroom-renovations",
   },
+  openGraph: {
+    title: "Bathroom Renovations Hertfordshire | BBBrotherBuilding",
+    description:
+      "Complete bathroom renovations in Hertfordshire. Tiling, plumbing, fixtures, underfloor heating — all handled by one team. Ltd company, £10M insured, 10/10 Checkatrade.",
+    url: "https://bbbrotherbuilding.co.uk/services/bathroom-renovations",
+  },
+  twitter: {
+    title: "Bathroom Renovations Hertfordshire | BBBrotherBuilding",
+    description:
+      "Complete bathroom renovations in Hertfordshire. Tiling, plumbing, fixtures, underfloor heating — all handled by one team. Ltd company, £10M insured, 10/10 Checkatrade.",
+  },
 };
 
 export default function BathroomRenovationsPage() {
