@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/services/extensions",
   },
+  openGraph: {
+    title: "House Extensions Hertfordshire | BBBrotherBuilding",
+    description:
+      "Single & double storey house extensions in Hertfordshire. Transform your living space with additional rooms, open-plan layouts, and seamless integration. Ltd company, £10M insured, 10/10 Checkatrade.",
+    url: "https://bbbrotherbuilding.co.uk/services/extensions",
+  },
+  twitter: {
+    title: "House Extensions Hertfordshire | BBBrotherBuilding",
+    description:
+      "Single & double storey house extensions in Hertfordshire. Transform your living space with additional rooms, open-plan layouts, and seamless integration. Ltd company, £10M insured, 10/10 Checkatrade.",
+  },
 };
 
 export default function ExtensionsPage() {

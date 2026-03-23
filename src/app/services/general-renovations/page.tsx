@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/services/general-renovations",
   },
+  openGraph: {
+    title: "Home Renovations Hertfordshire | BBBrotherBuilding",
+    description:
+      "Complete home renovations and refurbishments. From structural changes to finishing touches, we transform tired properties into beautiful homes.",
+    url: "https://bbbrotherbuilding.co.uk/services/general-renovations",
+  },
+  twitter: {
+    title: "Home Renovations Hertfordshire | BBBrotherBuilding",
+    description:
+      "Complete home renovations and refurbishments. From structural changes to finishing touches, we transform tired properties into beautiful homes.",
+  },
 };
 
 export default function GeneralRenovationsPage() {

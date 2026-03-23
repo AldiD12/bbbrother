@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/locations/st-albans",
   },
+  openGraph: {
+    title: "Builders in St Albans | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in St Albans for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+    url: "https://bbbrotherbuilding.co.uk/locations/st-albans",
+  },
+  twitter: {
+    title: "Builders in St Albans | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in St Albans for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+  },
 };
 
 export default function StAlbansPage() {

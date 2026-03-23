@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/locations",
   },
+  openGraph: {
+    title: "Areas We Cover | Hertfordshire & NW London | BBBrotherBuilding",
+    description:
+      "BBBrotherBuilding serves St Albans, Watford, Edgware, Stanmore, Barnet, Harrow, Wembley, Wood Green & all of Hertfordshire and North West London.",
+    url: "https://bbbrotherbuilding.co.uk/locations",
+  },
+  twitter: {
+    title: "Areas We Cover | Hertfordshire & NW London | BBBrotherBuilding",
+    description:
+      "BBBrotherBuilding serves St Albans, Watford, Edgware, Stanmore, Barnet, Harrow, Wembley, Wood Green & all of Hertfordshire and North West London.",
+  },
 };
 
 const locations = [

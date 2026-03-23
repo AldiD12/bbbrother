@@ -25,7 +25,7 @@ export function OrganizationSchema() {
     },
     priceRange: "£££",
     image: "https://bbbrotherbuilding.co.uk/images/hero.webp",
-    sameAs: [],
+    sameAs: ["https://www.checkatrade.com/trades/bbbrotherbuildingltd"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Building Services",

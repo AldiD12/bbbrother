@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/locations/stanmore",
   },
+  openGraph: {
+    title: "Builders in Stanmore | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Stanmore for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+    url: "https://bbbrotherbuilding.co.uk/locations/stanmore",
+  },
+  twitter: {
+    title: "Builders in Stanmore | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Stanmore for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+  },
 };
 
 export default function StanmorePage() {

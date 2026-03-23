@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/locations/harrow",
   },
+  openGraph: {
+    title: "Builders in Harrow | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Harrow for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+    url: "https://bbbrotherbuilding.co.uk/locations/harrow",
+  },
+  twitter: {
+    title: "Builders in Harrow | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Harrow for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+  },
 };
 
 export default function HarrowPage() {

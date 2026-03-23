@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/services/plastering",
   },
+  openGraph: {
+    title: "Plastering Services Hertfordshire | BBBrotherBuilding",
+    description:
+      "Professional plastering for new builds, extensions, and renovations. Smooth finishes, skimming, rendering, and plasterboard installation.",
+    url: "https://bbbrotherbuilding.co.uk/services/plastering",
+  },
+  twitter: {
+    title: "Plastering Services Hertfordshire | BBBrotherBuilding",
+    description:
+      "Professional plastering for new builds, extensions, and renovations. Smooth finishes, skimming, rendering, and plasterboard installation.",
+  },
 };
 
 export default function PlasteringPage() {

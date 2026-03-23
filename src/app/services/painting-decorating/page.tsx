@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/services/painting-decorating",
   },
+  openGraph: {
+    title: "Painting & Decorating Hertfordshire | BBBrotherBuilding",
+    description:
+      "Interior and exterior painting, wallpapering, and decorating. The finishing touches that bring your renovation to life.",
+    url: "https://bbbrotherbuilding.co.uk/services/painting-decorating",
+  },
+  twitter: {
+    title: "Painting & Decorating Hertfordshire | BBBrotherBuilding",
+    description:
+      "Interior and exterior painting, wallpapering, and decorating. The finishing touches that bring your renovation to life.",
+  },
 };
 
 export default function PaintingDecoratingPage() {

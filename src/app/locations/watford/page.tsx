@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/locations/watford",
   },
+  openGraph: {
+    title: "Builders in Watford | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Watford for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+    url: "https://bbbrotherbuilding.co.uk/locations/watford",
+  },
+  twitter: {
+    title: "Builders in Watford | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Watford for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+  },
 };
 
 export default function WatfordPage() {

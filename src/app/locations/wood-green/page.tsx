@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/locations/wood-green",
   },
+  openGraph: {
+    title: "Builders in Wood Green | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Wood Green for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+    url: "https://bbbrotherbuilding.co.uk/locations/wood-green",
+  },
+  twitter: {
+    title: "Builders in Wood Green | Extensions & Lofts | BBBrotherBuilding",
+    description:
+      "Trusted builders in Wood Green for extensions, loft conversions, kitchens, and bathrooms. Ltd company, £10M insured, 10/10 on Checkatrade. Free quotes.",
+  },
 };
 
 export default function WoodGreenPage() {

@@ -3,11 +3,22 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us | BBBrotherBuilding",
+  title: "About BBBrotherBuilding | 12 Years Experience | Hertfordshire",
   description:
     "Family-run building company in Borehamwood, Hertfordshire. 12+ years experience in extensions, loft conversions & renovations. Companies House registered. 10/10 Checkatrade. £10M insured.",
   alternates: {
     canonical: "https://bbbrotherbuilding.co.uk/about",
+  },
+  openGraph: {
+    title: "About BBBrotherBuilding | 12 Years Experience | Hertfordshire",
+    description:
+      "Family-run building company in Borehamwood, Hertfordshire. 12+ years experience in extensions, loft conversions & renovations. Companies House registered. 10/10 Checkatrade. £10M insured.",
+    url: "https://bbbrotherbuilding.co.uk/about",
+  },
+  twitter: {
+    title: "About BBBrotherBuilding | 12 Years Experience | Hertfordshire",
+    description:
+      "Family-run building company in Borehamwood, Hertfordshire. 12+ years experience in extensions, loft conversions & renovations. Companies House registered. 10/10 Checkatrade. £10M insured.",
   },
 };
 
@@ -72,9 +83,32 @@ const showcaseImages = [
   },
 ];
 
+function PersonSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Besart Dishani",
+    jobTitle: "Director",
+    worksFor: {
+      "@type": "Organization",
+      "@id": "https://bbbrotherbuilding.co.uk/#organization",
+      name: "BBBrotherBuilding Ltd",
+    },
+    sameAs: ["https://www.checkatrade.com/trades/bbbrotherbuildingltd"],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default function AboutPage() {
   return (
     <>
+      <PersonSchema />
       {/* Hero Section */}
       <section className="px-6 mb-20 md:mb-28">
         <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:gap-16 md:items-center">
