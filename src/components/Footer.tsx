@@ -85,18 +85,21 @@ export function Footer() {
               <a
                 href="tel:07925921222"
                 className="text-white/70 text-sm hover:text-secondary transition-colors"
+                aria-label="Call BBBrotherBuilding on 07925 921 222"
               >
                 07925 921 222
               </a>
               <a
                 href="mailto:bledar@bbbrotherbuilding.co.uk"
                 className="text-white/70 text-sm hover:text-secondary transition-colors break-all"
+                aria-label="Email BBBrotherBuilding"
               >
                 bledar@bbbrotherbuilding.co.uk
               </a>
               <Link
                 href="/contact"
                 className="mt-2 inline-block bg-secondary text-white font-label font-bold py-3 px-6 rounded-full text-sm text-center hover:bg-secondary/90 transition-colors"
+                aria-label="Get a free quote for your building project"
               >
                 Get a Free Quote
               </Link>

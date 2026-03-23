@@ -36,6 +36,7 @@ export function Navbar() {
           <Link
             href="/contact"
             className="bg-secondary text-white font-label font-bold py-3 px-6 rounded-full text-sm hover:bg-secondary/90 transition-colors"
+            aria-label="Get a free quote for your building project"
           >
             Free Quote
           </Link>
@@ -72,6 +73,7 @@ export function Navbar() {
             href="/contact"
             onClick={() => setIsOpen(false)}
             className="block mt-4 bg-secondary text-white font-label font-bold py-4 px-6 rounded-full text-center"
+            aria-label="Get a free quote for your building project"
           >
             Get a Free Quote
           </Link>

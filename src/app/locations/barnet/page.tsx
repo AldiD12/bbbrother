@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { LocationPage } from "@/components/LocationPage";
+import { getLocationBySlug } from "@/data/locations";
+
+const locationData = getLocationBySlug("barnet")!;
 
 export const metadata: Metadata = {
   title: "Builders in Barnet | Extensions & Lofts | BBBrotherBuilding",
@@ -13,7 +16,8 @@ export const metadata: Metadata = {
 export default function BarnetPage() {
   return (
     <LocationPage
-      location="Barnet"
+      location={locationData.name}
+      locationData={locationData}
       description="Looking for reliable builders in Barnet? BBBrotherBuilding specialises in house extensions, loft conversions, kitchen installations, and bathroom renovations across the Barnet borough. We are a Companies House registered limited company with £10 million public liability insurance and a perfect 10/10 Checkatrade rating. Every project is managed by our own team from start to finish."
       heroImage="/images/exterior_extension_finished_roof_back_view.jpeg"
       galleryImages={[
