@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const serviceLinks = [
   { href: "/services/extensions", label: "Extensions" },
@@ -29,9 +30,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <div className="text-2xl font-headline font-black text-white mb-4 uppercase tracking-tighter">
-              BBBrotherBuilding
-            </div>
+            <Image
+              src="/logo-bbbrotherbuilding.png"
+              alt="BBBrother Building Logo"
+              width={140}
+              height={52}
+              className="h-10 w-auto mb-4 brightness-0 invert"
+            />
             <p className="text-white/70 font-body text-sm leading-relaxed mb-4">
               Trusted builders in Hertfordshire &amp; North West London. Extensions, loft conversions, and complete home transformations.
             </p>

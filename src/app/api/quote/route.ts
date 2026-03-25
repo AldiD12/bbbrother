@@ -1,7 +1,11 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResendClient() {
+  // Dynamic import at runtime to avoid build-time crashes when env var is missing
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { Resend } = require("resend");
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 const SERVICE_LABELS: Record<string, string> = {
   extension: "Extension",
@@ -28,6 +32,7 @@ export async function POST(request: Request) {
 
     const serviceLabel = SERVICE_LABELS[service] || service || "Not specified";
 
+    const resend = getResendClient();
     const { data, error } = await resend.emails.send({
       from: "BBBrotherBuilding <quotes@bbbrotherbuilding.co.uk>",
       to: ["bledar@bbbrotherbuilding.co.uk"],
