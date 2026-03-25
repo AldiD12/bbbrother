@@ -10,17 +10,29 @@ export function ServiceSchema({ serviceType, description, url }: ServiceSchemaPr
     "@type": "Service",
     serviceType,
     description,
+    image: "https://bbbrotherbuilding.co.uk/images/og-default.webp",
     url: `https://bbbrotherbuilding.co.uk${url}`,
+    "@id": `https://bbbrotherbuilding.co.uk${url}#service`,
+    offers: {
+      "@type": "Offer",
+      priceRange: "£££",
+    },
     provider: {
       "@type": "GeneralContractor",
       name: "BBBrotherBuilding Ltd",
       telephone: "+447925921222",
       url: "https://bbbrotherbuilding.co.uk",
     },
-    areaServed: {
-      "@type": "Place",
-      name: "Hertfordshire and North West London",
-    },
+    areaServed: [
+      {
+        "@type": "AdministrativeArea",
+        name: "Hertfordshire"
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Greater London"
+      }
+    ],
   };
 
   return (

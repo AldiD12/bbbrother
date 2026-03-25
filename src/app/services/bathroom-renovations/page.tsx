@@ -29,7 +29,7 @@ export default function BathroomRenovationsPage() {
       heroTitle="Bathroom Renovations"
       heroHighlight="Hertfordshire"
       heroDescription="Complete bathroom renovations from design through to final finish. Tiling, plumbing, fixtures, underfloor heating — all handled by one team."
-      heroImage="/images/interior_bathroom_complete_tub_shower_tiling.jpeg"
+      heroImage="/images/interior_bathroom_complete_tub_shower_tiling.webp"
       heroImageAlt="Completed bathroom renovation with tub, shower and tiling by BBBrotherBuilding in Hertfordshire"
       whatWeOfferIntro="From the first tile to the final tap, we manage every element of your bathroom renovation — plumbing, electrics, tiling, and finishing — so you get a stunning result without the stress."
       features={[
@@ -57,9 +57,9 @@ export default function BathroomRenovationsPage() {
         { step: "04", title: "Final Walkthrough & 2-Year Guarantee", description: "We walk through every detail together. Your project is backed by our 2-year workmanship guarantee and £10M insurance." },
       ]}
       galleryImages={[
-        { src: "/images/interior_bathroom_complete_sink_tub_tiling.jpeg", alt: "Completed bathroom with sink, tub and tiling by BBBrotherBuilding" },
-        { src: "/images/interior_bathroom_complete_tub_fixtures_marble.jpeg", alt: "Luxury bathroom with tub, fixtures and marble finish in Hertfordshire" },
-        { src: "/images/interior_bathroom_shower_tiling_detail.jpeg", alt: "Shower tiling detail in bathroom renovation by BBBrotherBuilding" },
+        { src: "/images/interior_bathroom_complete_sink_tub_tiling.webp", alt: "Completed bathroom with sink, tub and tiling by BBBrotherBuilding" },
+        { src: "/images/interior_bathroom_complete_tub_fixtures_marble.webp", alt: "Luxury bathroom with tub, fixtures and marble finish in Hertfordshire" },
+        { src: "/images/interior_bathroom_shower_tiling_detail.webp", alt: "Shower tiling detail in bathroom renovation by BBBrotherBuilding" },
       ]}
       ctaTitle="Ready to Renovate Your Bathroom?"
       ctaDescription="Get a free site survey and fixed-price quotation for your bathroom renovation. No obligation, no hidden costs."

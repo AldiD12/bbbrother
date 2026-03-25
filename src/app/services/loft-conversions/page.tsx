@@ -29,7 +29,7 @@ export default function LoftConversionsPage() {
       heroTitle="Loft Conversions"
       heroHighlight="Hertfordshire"
       heroDescription="Dormer, hip-to-gable, and mansard loft conversions. Maximise your home's potential with a beautifully finished additional floor."
-      heroImage="/images/interior_skylight_installation_wide.jpeg"
+      heroImage="/images/interior_skylight_installation_wide.webp"
       heroImageAlt="Skylight installation in loft conversion by BBBrotherBuilding in Hertfordshire"
       whatWeOfferIntro="From initial structural assessment to the final coat of paint, we handle every aspect of your loft conversion with precision and care."
       features={[
@@ -77,9 +77,9 @@ export default function LoftConversionsPage() {
         },
       ]}
       galleryImages={[
-        { src: "/images/interior_living_room_plastered_skylight_wide_view.jpeg", alt: "Plastered living room with skylight installed by BBBrotherBuilding" },
-        { src: "/images/interior_skylight_lighting_effect.jpeg", alt: "Natural light streaming through skylight in loft conversion" },
-        { src: "/images/interior_skylight_detail_view.jpeg", alt: "Skylight detail view in completed loft conversion in Hertfordshire" },
+        { src: "/images/interior_living_room_plastered_skylight_wide_view.webp", alt: "Plastered living room with skylight installed by BBBrotherBuilding" },
+        { src: "/images/interior_skylight_lighting_effect.webp", alt: "Natural light streaming through skylight in loft conversion" },
+        { src: "/images/interior_skylight_detail_view.webp", alt: "Skylight detail view in completed loft conversion in Hertfordshire" },
       ]}
       ctaTitle="Ready to Convert Your Loft?"
       ctaDescription="Get a free site survey and fixed-price quotation for your loft conversion. No obligation, no hidden costs."

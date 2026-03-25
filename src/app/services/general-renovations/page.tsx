@@ -29,7 +29,7 @@ export default function GeneralRenovationsPage() {
       heroTitle="Home Renovations"
       heroHighlight="Hertfordshire"
       heroDescription="Complete home renovations and refurbishments. From structural changes to finishing touches, we transform tired properties into beautiful homes you will love living in."
-      heroImage="/images/interior_flooring_installation_hardwood.jpeg"
+      heroImage="/images/interior_flooring_installation_hardwood.webp"
       heroImageAlt="Hardwood flooring installation as part of a home renovation by BBBrotherBuilding"
       whatWeOfferIntro="Every renovation is different. We tailor our approach to your property, your vision, and your budget — delivering a home that feels brand new."
       features={[
@@ -45,8 +45,8 @@ export default function GeneralRenovationsPage() {
         { step: "04", title: "Walkthrough", description: "We walk through every room together to ensure perfection. All work is backed by our 2-year workmanship guarantee and £10M insurance." },
       ]}
       galleryImages={[
-        { src: "/images/interior_flooring_installation_progress.jpeg", alt: "Flooring installation in progress by BBBrotherBuilding" },
-        { src: "/images/interior_utility_room_plastering_wiring_pipes.jpeg", alt: "Utility room renovation with plastering and wiring by BBBrotherBuilding" },
+        { src: "/images/interior_flooring_installation_progress.webp", alt: "Flooring installation in progress by BBBrotherBuilding" },
+        { src: "/images/interior_utility_room_plastering_wiring_pipes.webp", alt: "Utility room renovation with plastering and wiring by BBBrotherBuilding" },
       ]}
       galleryColumns={2}
       ctaTitle="Ready to Start?"

@@ -28,25 +28,25 @@ const services = [
     title: "Extensions",
     href: "/services/extensions",
     description: "Single and double storey extensions that transform your living space.",
-    image: "/images/exterior_extension_finished_roof_back_view.jpeg",
+    image: "/images/exterior_extension_finished_roof_back_view.webp",
   },
   {
     title: "Loft Conversions",
     href: "/services/loft-conversions",
     description: "Dormer, hip-to-gable, and mansard conversions to maximise your home.",
-    image: "/images/interior_skylight_installation_wide.jpeg",
+    image: "/images/interior_skylight_installation_wide.webp",
   },
   {
     title: "Bathrooms",
     href: "/services/bathroom-renovations",
     description: "Complete bathroom renovations from design through to final finish.",
-    image: "/images/interior_bathroom_complete_tub_shower_tiling.jpeg",
+    image: "/images/interior_bathroom_complete_tub_shower_tiling.webp",
   },
   {
     title: "Kitchens",
     href: "/services/kitchen-fitting",
     description: "Full kitchen fitting including plumbing, electrics, and tiling.",
-    image: "/images/interior_kitchen_complete_grey_cabinets_wide.jpeg",
+    image: "/images/interior_kitchen_complete_grey_cabinets_wide.webp",
   },
 ];
 
@@ -105,12 +105,12 @@ const whyChooseUs = [
 ];
 
 const galleryImages = [
-  { src: "/images/exterior_extension_brickwork_windows_view.jpeg", alt: "Extension brickwork with window frames fitted" },
-  { src: "/images/interior_kitchen_islands_cabinets_marble_flooring_complete.jpeg", alt: "Completed kitchen with island and marble flooring" },
-  { src: "/images/interior_bathroom_complete_sink_tub_tiling.jpeg", alt: "Completed bathroom renovation with tiling" },
-  { src: "/images/exterior_front_driveway_complete_block_paving_view.jpeg", alt: "Completed block paving driveway" },
-  { src: "/images/interior_living_room_plastered_skylight_wide_view.jpeg", alt: "Plastered living room with skylight" },
-  { src: "/images/exterior_extension_roof_guttering_system.jpeg", alt: "Extension with completed roof and guttering" },
+  { src: "/images/exterior_extension_brickwork_windows_view.webp", alt: "Extension brickwork with window frames fitted" },
+  { src: "/images/interior_kitchen_islands_cabinets_marble_flooring_complete.webp", alt: "Completed kitchen with island and marble flooring" },
+  { src: "/images/interior_bathroom_complete_sink_tub_tiling.webp", alt: "Completed bathroom renovation with tiling" },
+  { src: "/images/exterior_front_driveway_complete_block_paving_view.webp", alt: "Completed block paving driveway" },
+  { src: "/images/interior_living_room_plastered_skylight_wide_view.webp", alt: "Plastered living room with skylight" },
+  { src: "/images/exterior_extension_roof_guttering_system.webp", alt: "Extension with completed roof and guttering" },
 ];
 
 const areas = [
@@ -209,7 +209,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 md:mt-0">
             <Image
-              src="/images/exterior_extension_finished_roof_back_view.jpeg"
+              src="/images/exterior_extension_finished_roof_back_view.webp"
               alt="Completed house extension with roof and brickwork by BBBrotherBuilding in Hertfordshire"
               width={800}
               height={600}

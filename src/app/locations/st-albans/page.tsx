@@ -30,11 +30,11 @@ export default function StAlbansPage() {
       location={locationData.name}
       locationData={locationData}
       description="BBBrotherBuilding delivers high-quality extensions, loft conversions, kitchen fitting, and bathroom renovations across St Albans and the surrounding areas. As a Companies House registered limited company with £10 million insurance and a 10/10 Checkatrade rating, we bring the reliability and craftsmanship that St Albans homeowners expect. One team from foundations to finish, no subcontractor surprises."
-      heroImage="/images/exterior_extension_finished_roof_back_view.jpeg"
+      heroImage="/images/exterior_extension_finished_roof_back_view.webp"
       galleryImages={[
-        { src: "/images/exterior_extension_brickwork_windows_view.jpeg", alt: "House extension with window frames in St Albans" },
-        { src: "/images/interior_kitchen_islands_cabinets_marble_flooring_complete.jpeg", alt: "Completed kitchen renovation in St Albans" },
-        { src: "/images/interior_bathroom_complete_sink_tub_tiling.jpeg", alt: "Bathroom renovation in St Albans" },
+        { src: "/images/exterior_extension_brickwork_windows_view.webp", alt: "House extension with window frames in St Albans" },
+        { src: "/images/interior_kitchen_islands_cabinets_marble_flooring_complete.webp", alt: "Completed kitchen renovation in St Albans" },
+        { src: "/images/interior_bathroom_complete_sink_tub_tiling.webp", alt: "Bathroom renovation in St Albans" },
       ]}
     />
   );

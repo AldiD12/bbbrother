@@ -29,7 +29,7 @@ export default function PaintingDecoratingPage() {
       heroTitle="Painting & Decorating"
       heroHighlight="Hertfordshire"
       heroDescription="Interior and exterior painting, wallpapering, and decorating. The finishing touches that bring your renovation to life — delivered with care and precision by our experienced team."
-      heroImage="/images/interior_living_room_plastered_skylight_wide_view.jpeg"
+      heroImage="/images/interior_living_room_plastered_skylight_wide_view.webp"
       heroImageAlt="Beautifully decorated living room with skylight by BBBrotherBuilding"
       whatWeOfferIntro="From feature walls to full property redecorations, we bring colour, character, and a flawless finish to every room we touch."
       features={[
@@ -45,8 +45,8 @@ export default function PaintingDecoratingPage() {
         { step: "04", title: "Walkthrough", description: "We walk through every room together to ensure you are completely satisfied. All work is backed by our 2-year workmanship guarantee." },
       ]}
       galleryImages={[
-        { src: "/images/interior_wall_plastering_detail_smooth.jpeg", alt: "Smooth wall finish detail by BBBrotherBuilding" },
-        { src: "/images/interior_living_room_plastered_walls_skylight_detail.jpeg", alt: "Living room with plastered walls and skylight detail by BBBrotherBuilding" },
+        { src: "/images/interior_wall_plastering_detail_smooth.webp", alt: "Smooth wall finish detail by BBBrotherBuilding" },
+        { src: "/images/interior_living_room_plastered_walls_skylight_detail.webp", alt: "Living room with plastered walls and skylight detail by BBBrotherBuilding" },
       ]}
       galleryColumns={2}
       ctaTitle="Ready to Start?"

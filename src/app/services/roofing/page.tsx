@@ -29,7 +29,7 @@ export default function RoofingPage() {
       heroTitle="Roofing Services"
       heroHighlight="Hertfordshire"
       heroDescription="New roofs, roof repairs, flat roofing, and guttering for extensions and renovations. Watertight results guaranteed by experienced tradespeople who never cut corners overhead."
-      heroImage="/images/exterior_extension_roof_guttering_system.jpeg"
+      heroImage="/images/exterior_extension_roof_guttering_system.webp"
       heroImageAlt="Completed roofing and guttering system by BBBrotherBuilding in Hertfordshire"
       whatWeOfferIntro="Whether you need a brand-new roof for an extension or urgent repairs to keep the weather out, we deliver watertight results every time."
       features={[
@@ -45,8 +45,8 @@ export default function RoofingPage() {
         { step: "04", title: "Walkthrough", description: "We inspect every detail together from ground and roof level. All roofing work is backed by our 2-year workmanship guarantee." },
       ]}
       galleryImages={[
-        { src: "/images/exterior_extension_roof_detail_shingles.jpeg", alt: "Extension roof detail with shingles completed by BBBrotherBuilding" },
-        { src: "/images/exterior_roof_tile_completion_brick_wall.jpeg", alt: "Roof tile completion and brick wall by BBBrotherBuilding in Hertfordshire" },
+        { src: "/images/exterior_extension_roof_detail_shingles.webp", alt: "Extension roof detail with shingles completed by BBBrotherBuilding" },
+        { src: "/images/exterior_roof_tile_completion_brick_wall.webp", alt: "Roof tile completion and brick wall by BBBrotherBuilding in Hertfordshire" },
       ]}
       galleryColumns={2}
       ctaTitle="Ready to Start?"

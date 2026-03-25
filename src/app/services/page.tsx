@@ -28,56 +28,56 @@ const services = [
     href: "/services/extensions",
     description:
       "Single and double storey extensions that transform your living space.",
-    image: "/images/exterior_extension_finished_roof_back_view.jpeg",
+    image: "/images/exterior_extension_finished_roof_back_view.webp",
   },
   {
     title: "Loft Conversions",
     href: "/services/loft-conversions",
     description:
       "Dormer, hip-to-gable, and mansard conversions to maximise your home.",
-    image: "/images/interior_skylight_installation_wide.jpeg",
+    image: "/images/interior_skylight_installation_wide.webp",
   },
   {
     title: "Bathroom Renovations",
     href: "/services/bathroom-renovations",
     description:
       "Complete bathroom renovations from design through to final finish.",
-    image: "/images/interior_bathroom_complete_tub_shower_tiling.jpeg",
+    image: "/images/interior_bathroom_complete_tub_shower_tiling.webp",
   },
   {
     title: "Kitchen Fitting",
     href: "/services/kitchen-fitting",
     description:
       "Full kitchen fitting including plumbing, electrics, and tiling.",
-    image: "/images/interior_kitchen_complete_grey_cabinets_wide.jpeg",
+    image: "/images/interior_kitchen_complete_grey_cabinets_wide.webp",
   },
   {
     title: "Plastering",
     href: "/services/plastering",
     description:
       "Smooth, flawless plastering for walls and ceilings throughout your home.",
-    image: "/images/interior_wall_plastering_finished_surface.jpeg",
+    image: "/images/interior_wall_plastering_finished_surface.webp",
   },
   {
     title: "Painting & Decorating",
     href: "/services/painting-decorating",
     description:
       "Professional interior and exterior painting with a premium finish.",
-    image: "/images/interior_living_room_plastered_skylight_wide_view.jpeg",
+    image: "/images/interior_living_room_plastered_skylight_wide_view.webp",
   },
   {
     title: "Roofing",
     href: "/services/roofing",
     description:
       "Roof repairs, replacements, and new-build roofing with guttering systems.",
-    image: "/images/exterior_extension_roof_guttering_system.jpeg",
+    image: "/images/exterior_extension_roof_guttering_system.webp",
   },
   {
     title: "General Renovations",
     href: "/services/general-renovations",
     description:
       "Full property renovations including flooring, structural work, and more.",
-    image: "/images/interior_flooring_installation_hardwood.jpeg",
+    image: "/images/interior_flooring_installation_hardwood.webp",
   },
 ];
 

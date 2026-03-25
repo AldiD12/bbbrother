@@ -29,7 +29,7 @@ export default function KitchenFittingPage() {
       heroTitle="Kitchen Fitting"
       heroHighlight="Hertfordshire"
       heroDescription="Full kitchen fitting including plumbing, electrics, tiling, and worktop installation. From design consultation to the final reveal."
-      heroImage="/images/interior_kitchen_complete_grey_cabinets_wide.jpeg"
+      heroImage="/images/interior_kitchen_complete_grey_cabinets_wide.webp"
       heroImageAlt="Completed kitchen fitting with grey cabinets by BBBrotherBuilding in Hertfordshire"
       whatWeOfferIntro="A new kitchen is the heart of any home renovation. We handle every trade — carpentry, plumbing, electrics, tiling — so your kitchen is fitted to perfection by one dedicated team."
       features={[
@@ -57,9 +57,9 @@ export default function KitchenFittingPage() {
         { step: "04", title: "Final Walkthrough & 2-Year Guarantee", description: "We walk through every detail together. Your project is backed by our 2-year workmanship guarantee and £10M insurance." },
       ]}
       galleryImages={[
-        { src: "/images/interior_kitchen_islands_cabinets_marble_flooring_complete.jpeg", alt: "Kitchen island with cabinets and marble flooring by BBBrotherBuilding" },
-        { src: "/images/interior_kitchen_sink_gold_tap_marble.jpeg", alt: "Kitchen sink with gold tap and marble worktop in Hertfordshire" },
-        { src: "/images/interior_kitchen_hob_extractor_tiling_backsplash.jpeg", alt: "Kitchen hob, extractor and tiling backsplash fitted by BBBrotherBuilding" },
+        { src: "/images/interior_kitchen_islands_cabinets_marble_flooring_complete.webp", alt: "Kitchen island with cabinets and marble flooring by BBBrotherBuilding" },
+        { src: "/images/interior_kitchen_sink_gold_tap_marble.webp", alt: "Kitchen sink with gold tap and marble worktop in Hertfordshire" },
+        { src: "/images/interior_kitchen_hob_extractor_tiling_backsplash.webp", alt: "Kitchen hob, extractor and tiling backsplash fitted by BBBrotherBuilding" },
       ]}
       ctaTitle="Ready to Transform Your Kitchen?"
       ctaDescription="Get a free site survey and fixed-price quotation for your kitchen fitting. No obligation, no hidden costs."

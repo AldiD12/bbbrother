@@ -70,15 +70,15 @@ const credentials = [
 
 const showcaseImages = [
   {
-    src: "/images/exterior_extension_brickwork_windows_view.jpeg",
+    src: "/images/exterior_extension_brickwork_windows_view.webp",
     alt: "Extension brickwork with window frames fitted by BBBrotherBuilding",
   },
   {
-    src: "/images/interior_kitchen_islands_cabinets_marble_flooring_complete.jpeg",
+    src: "/images/interior_kitchen_islands_cabinets_marble_flooring_complete.webp",
     alt: "Completed kitchen with island, cabinets and marble flooring",
   },
   {
-    src: "/images/interior_bathroom_complete_tub_shower_tiling.jpeg",
+    src: "/images/interior_bathroom_complete_tub_shower_tiling.webp",
     alt: "Completed bathroom renovation with tub, shower and tiling",
   },
 ];
@@ -131,7 +131,7 @@ export default function AboutPage() {
           </div>
           <div className="mt-10 md:mt-0">
             <Image
-              src="/images/exterior_extension_finished_roof_back_view.jpeg"
+              src="/images/exterior_extension_finished_roof_back_view.webp"
               alt="Completed house extension with roof and brickwork by BBBrotherBuilding in Hertfordshire"
               width={800}
               height={600}

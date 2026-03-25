@@ -29,7 +29,7 @@ export default function PlasteringPage() {
       heroTitle="Plastering Services"
       heroHighlight="Hertfordshire"
       heroDescription="Professional plastering for new builds, extensions, and renovations. Smooth finishes, skimming, rendering, and plasterboard installation by experienced tradespeople who take pride in every surface."
-      heroImage="/images/interior_wall_plastering_finished_surface.jpeg"
+      heroImage="/images/interior_wall_plastering_finished_surface.webp"
       heroImageAlt="Professional plastering finished surface by BBBrotherBuilding in Hertfordshire"
       whatWeOfferIntro="From fresh skim coats to full plasterboard installations, we deliver flawless surfaces that form the perfect canvas for your interiors."
       features={[
@@ -45,8 +45,8 @@ export default function PlasteringPage() {
         { step: "04", title: "Walkthrough", description: "We inspect every wall and ceiling together, ensuring a flawless finish. All work is backed by our 2-year workmanship guarantee." },
       ]}
       galleryImages={[
-        { src: "/images/interior_wall_plastering_large_room.jpeg", alt: "Plastering a large room interior by BBBrotherBuilding" },
-        { src: "/images/interior_wall_plastering_finishing_room.jpeg", alt: "Finishing room plastering work by BBBrotherBuilding" },
+        { src: "/images/interior_wall_plastering_large_room.webp", alt: "Plastering a large room interior by BBBrotherBuilding" },
+        { src: "/images/interior_wall_plastering_finishing_room.webp", alt: "Finishing room plastering work by BBBrotherBuilding" },
       ]}
       galleryColumns={2}
       ctaTitle="Ready to Start?"

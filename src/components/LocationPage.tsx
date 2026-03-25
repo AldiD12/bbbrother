@@ -18,25 +18,25 @@ const services = [
     title: "Extensions",
     href: "/services/extensions",
     description: "Single and double storey extensions that transform your living space.",
-    image: "/images/exterior_extension_finished_roof_back_view.jpeg",
+    image: "/images/exterior_extension_finished_roof_back_view.webp",
   },
   {
     title: "Loft Conversions",
     href: "/services/loft-conversions",
     description: "Dormer, hip-to-gable, and mansard conversions to maximise your home.",
-    image: "/images/interior_skylight_installation_wide.jpeg",
+    image: "/images/interior_skylight_installation_wide.webp",
   },
   {
     title: "Bathrooms",
     href: "/services/bathroom-renovations",
     description: "Complete bathroom renovations from design through to final finish.",
-    image: "/images/interior_bathroom_complete_tub_shower_tiling.jpeg",
+    image: "/images/interior_bathroom_complete_tub_shower_tiling.webp",
   },
   {
     title: "Kitchens",
     href: "/services/kitchen-fitting",
     description: "Full kitchen fitting including plumbing, electrics, and tiling.",
-    image: "/images/interior_kitchen_complete_grey_cabinets_wide.jpeg",
+    image: "/images/interior_kitchen_complete_grey_cabinets_wide.webp",
   },
 ];
 

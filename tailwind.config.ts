@@ -24,9 +24,9 @@ const config: Config = {
         "forest-green": "#166534",
       },
       fontFamily: {
-        headline: ["'Epilogue'", "system-ui", "sans-serif"],
-        body: ["'Noto Serif'", "Georgia", "serif"],
-        label: ["'Manrope'", "system-ui", "sans-serif"],
+        headline: ["var(--font-epilogue)", "system-ui", "sans-serif"],
+        body: ["var(--font-noto-serif)", "Georgia", "serif"],
+        label: ["var(--font-manrope)", "system-ui", "sans-serif"],
       },
       borderRadius: {
         DEFAULT: "1rem",

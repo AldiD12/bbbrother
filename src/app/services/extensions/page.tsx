@@ -29,7 +29,7 @@ export default function ExtensionsPage() {
       heroTitle="House Extensions"
       heroHighlight="Hertfordshire"
       heroDescription="Single &amp; double storey extensions designed to transform your living space. From planning permission and party wall agreements through to foundations, footings, RSJ steel beams, and building control sign-off — we manage the entire process. Our structural engineer ensures every element is compliant, while our team handles underpinning where required for a seamless integration with your existing home."
-      heroImage="/images/exterior_extension_finished_roof_back_view.jpeg"
+      heroImage="/images/exterior_extension_finished_roof_back_view.webp"
       heroImageAlt="Completed house extension with roof and brickwork by BBBrotherBuilding in Hertfordshire"
       whatWeOfferIntro="Every extension is unique. We tailor our approach to your property, your lifestyle, and your budget — delivering outstanding results every time."
       features={[
@@ -81,9 +81,9 @@ export default function ExtensionsPage() {
         },
       ]}
       galleryImages={[
-        { src: "/images/exterior_extension_brickwork_windows_view.jpeg", alt: "Extension brickwork with window frames fitted by BBBrotherBuilding" },
-        { src: "/images/exterior_extension_roof_guttering_system.jpeg", alt: "Extension roof and guttering system completed in Hertfordshire" },
-        { src: "/images/exterior_extension_brickwork_roof_line_wide.jpeg", alt: "Wide view of extension brickwork and roof line by BBBrotherBuilding" },
+        { src: "/images/exterior_extension_brickwork_windows_view.webp", alt: "Extension brickwork with window frames fitted by BBBrotherBuilding" },
+        { src: "/images/exterior_extension_roof_guttering_system.webp", alt: "Extension roof and guttering system completed in Hertfordshire" },
+        { src: "/images/exterior_extension_brickwork_roof_line_wide.webp", alt: "Wide view of extension brickwork and roof line by BBBrotherBuilding" },
       ]}
       ctaTitle="Ready to Extend Your Home?"
       ctaDescription="Get a free site survey and fixed-price quotation for your house extension. No obligation, no hidden costs."

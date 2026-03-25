@@ -4,11 +4,49 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { MobileStickyFooter } from "@/components/MobileStickyFooter";
 import { OrganizationSchema } from "@/components/OrganizationSchema";
+import { PersonSchema } from "@/components/PersonSchema";
 import { CookieConsent } from "@/components/CookieConsent";
 import { Analytics } from "@/components/Analytics";
+import { Epilogue, Manrope, Noto_Serif } from "next/font/google";
+
+const epilogue = Epilogue({
+  subsets: ["latin"],
+  weight: ["700", "800", "900"],
+  variable: "--font-epilogue",
+  display: "swap",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "800"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const notoSerif = Noto_Serif({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-noto-serif",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bbbrotherbuilding.co.uk"),
+  title: {
+    default: "BBBrotherBuilding Ltd | Extensions & Loft Conversions Hertfordshire",
+    template: "%s | BBBrotherBuilding Ltd"
+  },
+  description: "Premier building company in Hertfordshire & North West London. Specialising in high-end house extensions, loft conversions, and full home luxury renovations.",
+  keywords: ["builders Hertfordshire", "house extensions St Albans", "loft conversions Watford", "home renovations North London", "BBBrotherBuilding"],
+  authors: [{ name: "Besart Dishani" }],
+  creator: "Besart Dishani",
+  publisher: "BBBrotherBuilding Ltd",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },
@@ -20,10 +58,31 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "BBBrotherBuilding Ltd",
     type: "website",
-    images: [{ url: "/images/og-default.jpg", width: 1200, height: 630 }],
+    locale: "en_GB",
+    url: "https://bbbrotherbuilding.co.uk",
+    images: [{ 
+      url: "/images/og-default.webp", 
+      width: 1200, 
+      height: 630,
+      alt: "BBBrotherBuilding Ltd - Premium Construction Services"
+    }],
   },
   twitter: {
     card: "summary_large_image",
+    title: "BBBrotherBuilding Ltd | Extensions & Loft Conversions",
+    description: "Premier building company in Hertfordshire & North West London.",
+    images: ["/images/og-default.webp"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -34,20 +93,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Manrope:wght@400;500;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="font-body antialiased selection:bg-secondary/30">
+      <body className={`${notoSerif.variable} ${epilogue.variable} ${manrope.variable} font-body antialiased selection:bg-secondary/30`}>
         <OrganizationSchema />
+        <PersonSchema />
         <Analytics />
         <Navbar />
         <main className="pt-24 overflow-x-hidden">{children}</main>
