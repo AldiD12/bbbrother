@@ -61,20 +61,35 @@ export default function BathroomRenovationsPage() {
         { src: "/images/interior_bathroom_complete_tub_fixtures_marble.webp", alt: "Luxury bathroom with tub, fixtures and marble finish in Hertfordshire" },
         { src: "/images/interior_bathroom_shower_tiling_detail.webp", alt: "Shower tiling detail in bathroom renovation by BBBrotherBuilding" },
       ]}
+      review={{
+        rating: 10,
+        title: "This company is very good — I strongly recommend, 10/10",
+        text: "I had a whole renovation of my flat from BBBrother Building including plastering, tiles, kitchen, bathroom and electrical and plumbing work. They were very good to deal with, very understanding and hard working. Always made sure and kept me up to date with everything they were doing. I strongly recommend this company. Top job and trustworthy people. 10/10.",
+        jobLocation: "HA9",
+        verified: false,
+      }}
       ctaTitle="Ready to Renovate Your Bathroom?"
       ctaDescription="Get a free site survey and fixed-price quotation for your bathroom renovation. No obligation, no hidden costs."
       faqs={[
         {
           question: "How long does a bathroom renovation take?",
-          answer: "A typical bathroom renovation takes 2-4 weeks depending on the scope of work. This includes strip-out, plumbing, tiling, fixture installation, and finishing. We provide a detailed timeline in your quotation.",
+          answer: "A standard bathroom renovation takes 2-3 weeks. This includes day 1-2 strip-out, days 3-5 first-fix plumbing and electrics, days 6-8 waterproofing (tanking) and floor preparation, days 9-12 tiling, and the final days for second-fix plumbing, fixture installation, grouting, silicone, and snagging. Larger bathrooms or those with layout changes may take up to 4 weeks.",
         },
         {
           question: "How much does a bathroom renovation cost?",
-          answer: "Bathroom renovations typically range from £5,000 to £15,000 depending on the size and specification. Premium finishes with underfloor heating and bespoke tiling can cost more. We provide free consultations and fixed-price quotations.",
+          answer: "A full bathroom renovation typically costs £6,000-£12,000 for a standard family bathroom and £8,000-£18,000 for a larger or premium-spec bathroom. This covers strip-out, plumbing, electrics, waterproofing, tiling, fixtures, and finishing. Underfloor heating adds roughly £500-£800. Our quotation is fixed-price and itemised so you know exactly where every pound goes.",
         },
         {
-          question: "Do you handle all trades for the bathroom?",
-          answer: "Yes. Our in-house team handles plumbing, electrics, tiling, plastering, and all finishing work. You deal with one team from start to finish — no subcontractor surprises.",
+          question: "Do you supply the bathroom fixtures or do I choose my own?",
+          answer: "Either works. Many clients choose their own sanitaryware, tiles, and taps from suppliers like Victorian Plumbing, Bathstore, or Porcelanosa, and we install them. We can also recommend suppliers and products based on your budget and style preferences. We just need fixture selections confirmed before the tiling stage so everything fits perfectly.",
+        },
+        {
+          question: "What is tanking and does my bathroom need it?",
+          answer: "Tanking is a waterproof membrane applied to walls and floors in wet areas — particularly around showers and baths. It prevents water from seeping through tiles and grout into the wall structure, which can cause damp and mould. Every bathroom we renovate includes proper tanking in wet zones. It is essential for a long-lasting finish.",
+        },
+        {
+          question: "Can you move the toilet, shower, or bath to a different position?",
+          answer: "Yes. Repositioning fixtures requires rerouting waste pipes and water supply, which we handle as part of the first-fix plumbing stage. Moving a toilet is the most complex (it needs a fall to the soil stack), but it is usually achievable. We advise on what is practical during your free consultation.",
         },
       ]}
     />

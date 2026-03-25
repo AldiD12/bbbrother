@@ -24,6 +24,14 @@ interface FAQ {
   answer: string;
 }
 
+interface ReviewProps {
+  rating: number;
+  title: string;
+  text: string;
+  jobLocation: string;
+  verified: boolean;
+}
+
 interface ServicePageProps {
   serviceType: string;
   serviceSlug: string;
@@ -40,6 +48,7 @@ interface ServicePageProps {
   ctaTitle: string;
   ctaDescription: string;
   faqs: FAQ[];
+  review?: ReviewProps;
 }
 
 const trustBadges = [
@@ -65,6 +74,7 @@ export function ServicePage({
   ctaTitle,
   ctaDescription,
   faqs,
+  review,
 }: ServicePageProps) {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -195,6 +205,27 @@ export function ServicePage({
           </div>
         </div>
       </section>
+
+      {/* Customer Review */}
+      {review && (
+        <section className="px-6 mb-20 md:mb-28">
+          <div className="max-w-3xl mx-auto bg-surface-container-low rounded-lg p-8 md:p-12">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="font-headline font-black text-2xl text-secondary">{review.rating}/10</span>
+              <span className="font-label text-xs text-muted">on Checkatrade</span>
+              {review.verified && (
+                <span className="font-label text-[10px] uppercase tracking-widest text-secondary flex items-center gap-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" className="text-secondary"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Verified
+                </span>
+              )}
+            </div>
+            <h3 className="font-headline font-bold text-lg text-primary mb-3">&ldquo;{review.title}&rdquo;</h3>
+            <p className="text-charcoal leading-relaxed mb-4">{review.text}</p>
+            <p className="font-label text-xs text-muted">Job location: {review.jobLocation}</p>
+          </div>
+        </section>
+      )}
 
       {/* Our Process */}
       <section className="bg-surface-container-low py-20 md:py-28 mb-20 md:mb-28">
