@@ -28,8 +28,8 @@ export async function POST(request: Request) {
 
     const serviceLabel = SERVICE_LABELS[service] || service || "Not specified";
 
-    const { error } = await resend.emails.send({
-      from: "BBBrotherBuilding Website <onboarding@resend.dev>",
+    const { data, error } = await resend.emails.send({
+      from: "BBBrotherBuilding <quotes@bbbrotherbuilding.co.uk>",
       to: ["bledar@bbbrotherbuilding.co.uk"],
       replyTo: email || undefined,
       subject: `New Quote Request — ${serviceLabel} in ${postcode || "N/A"}`,
@@ -80,12 +80,14 @@ export async function POST(request: Request) {
     });
 
     if (error) {
-      console.error("Resend error:", error);
+      console.error("Resend error:", JSON.stringify(error));
       return NextResponse.json(
-        { error: "Failed to send email. Please try again." },
+        { error: `Failed to send email: ${error.message}` },
         { status: 500 }
       );
     }
+
+    console.log("Email sent successfully, id:", data?.id);
 
     return NextResponse.json({ success: true });
   } catch (err) {
