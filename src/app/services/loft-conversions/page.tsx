@@ -28,7 +28,7 @@ export default function LoftConversionsPage() {
       serviceSlug="loft-conversions"
       heroTitle="Loft Conversions"
       heroHighlight="Hertfordshire"
-      heroDescription="Dormer, hip-to-gable, and mansard loft conversions. Maximise your home's potential with a beautifully finished additional floor."
+      heroDescription="Dormer, hip-to-gable, and mansard loft conversions. Maximise your home's potential with a beautifully finished additional floor. From navigating permitted development rights to securing building control sign-off, our expert team manages the entire process."
       heroImage="/images/interior_skylight_installation_wide.webp"
       heroImageAlt="Skylight installation in loft conversion by BBBrotherBuilding in Hertfordshire"
       whatWeOfferIntro="From initial structural assessment to the final coat of paint, we handle every aspect of your loft conversion with precision and care."
@@ -49,9 +49,9 @@ export default function LoftConversionsPage() {
             "Flood your new loft room with natural light. We install high-quality Velux skylights that are thermally efficient, weatherproof, and perfectly positioned for maximum daylight.",
         },
         {
-          title: "Structural Steelwork & Insulation",
+          title: "Structural Steelwork & Compliance",
           description:
-            "Every loft conversion requires precision steelwork and exceptional insulation to meet building regulations. We handle all structural calculations and ensure your new floor is solid, warm, and quiet.",
+            "Every loft conversion requires precision steelwork and exceptional insulation to meet building regulations. We handle all structural calculations, party wall agreements, and ensure your new floor receives full building control sign-off.",
         },
       ]}
       processSteps={[

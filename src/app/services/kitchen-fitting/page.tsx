@@ -39,7 +39,7 @@ export default function KitchenFittingPage() {
         },
         {
           title: "Plumbing & Electrical",
-          description: "Sink plumbing, dishwasher connections, waste runs, and all electrical work for ovens, hobs, extractors, and lighting. Everything routed cleanly and tested before sign-off.",
+          description: "Sink plumbing, Gas Safe connections, waste runs, and all electrical work to Part P compliance standards for ovens, hobs, extractors, and lighting. Everything routed cleanly and tested before sign-off.",
         },
         {
           title: "Tiling & Splashbacks",

@@ -83,6 +83,14 @@ function getLocationFaqs(location: string) {
 export function LocationPage({ location, description, heroImage, galleryImages, locationData }: LocationPageProps) {
   const faqs = getLocationFaqs(location);
 
+  const housingTypesText = locationData.housingTypes.length > 1
+    ? `${locationData.housingTypes.slice(0, -1).join(', ')} and ${locationData.housingTypes.slice(-1)}`
+    : locationData.housingTypes[0];
+
+  const landmarksText = locationData.landmarks.length > 1
+    ? `${locationData.landmarks[0]} or ${locationData.landmarks[1]}`
+    : locationData.landmarks[0];
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -119,8 +127,13 @@ export function LocationPage({ location, description, heroImage, galleryImages, 
               Builders in{" "}
               <span className="text-secondary italic">{location}</span>
             </h1>
-            <p className="text-lg text-charcoal mb-8 leading-relaxed max-w-lg">
+            <p className="text-lg text-charcoal mb-4 leading-relaxed max-w-lg">
               {description}
+            </p>
+            <p className="text-base text-charcoal/80 mb-8 leading-relaxed max-w-lg">
+              Operating locally across {location}, we have extensive experience extending and renovating{" "}
+              {housingTypesText}. Whether your property is near {landmarksText}, we understand the local architecture perfectly.{" "}
+              <span className="font-semibold">{locationData.localChallenge}</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Link

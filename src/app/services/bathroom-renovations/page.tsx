@@ -39,11 +39,11 @@ export default function BathroomRenovationsPage() {
         },
         {
           title: "Tiling & Waterproofing",
-          description: "Precision tiling in ceramic, porcelain, marble, or natural stone. Every shower enclosure and wet area is fully tanked and waterproofed to prevent leaks for decades to come.",
+          description: "Precision tiling in ceramic, porcelain, marble, or natural stone. Every shower enclosure and wet area is professionally tanked and waterproofed to prevent leaks for decades to come.",
         },
         {
           title: "Plumbing & Fixtures",
-          description: "We install all sanitaryware — basins, toilets, baths, showers, and taps. Pipework is neatly routed and pressure-tested before any walls are closed up.",
+          description: "We handle all first-fix and second-fix plumbing to ensure perfect sanitaryware installation — basins, toilets, baths, showers, and taps. Pipework is neatly routed and pressure-tested before any walls are closed up.",
         },
         {
           title: "Underfloor Heating",
