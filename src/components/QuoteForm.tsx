@@ -25,23 +25,34 @@ export function QuoteForm() {
     email: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
   function updateField(field: string, value: string) {
     setFormData((prev) => ({ ...prev, [field]: value }));
   }
 
   async function handleSubmit() {
+    setSubmitting(true);
+    setError("");
     trackFormSubmit();
     try {
-      await fetch("https://formspree.io/f/placeholder", {
+      const res = await fetch("/api/quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+      if (!res.ok) {
+        const data = await res.json();
+        setError(data.error || "Something went wrong. Please try again or call us directly.");
+        setSubmitting(false);
+        return;
+      }
+      setSubmitted(true);
     } catch {
-      // Formspree submission - proceed regardless
+      setError("Could not send your enquiry. Please call us on 07925 921 222 or try again.");
+      setSubmitting(false);
     }
-    setSubmitted(true);
   }
 
   if (submitted) {
@@ -242,13 +253,16 @@ export function QuoteForm() {
             </button>
             <button
               onClick={handleSubmit}
-              disabled={!formData.name.trim() || !formData.phone.trim()}
+              disabled={!formData.name.trim() || !formData.phone.trim() || submitting}
               className="flex-1 bg-secondary text-white font-label font-bold py-3 px-6 rounded-full transition-transform active:scale-95 hover:bg-secondary/90 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
               aria-label="Submit your free quote request"
             >
-              Send Enquiry
+              {submitting ? "Sending..." : "Send Enquiry"}
             </button>
           </div>
+          {error && (
+            <p className="text-sm text-red-600 text-center mt-4">{error}</p>
+          )}
           <p className="text-sm text-muted text-center mt-4">
             We typically respond within 24 hours. Your details are never shared
             with third parties.
