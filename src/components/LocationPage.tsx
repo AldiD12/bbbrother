@@ -63,8 +63,155 @@ const trustBadges = [
   },
 ];
 
+const locationFaqs: Record<string, { question: string; answer: string }[]> = {
+  "St Albans": [
+    {
+      question: "Can I extend my home in a St Albans conservation area?",
+      answer: "Yes, but permitted development rights are often restricted in St Albans conservation areas like the city centre and Marshalswick. You will likely need a full planning application, and materials must match the existing property — for example, matching brickwork on a Victorian terrace. We have experience working within these restrictions and handle the entire planning process for you.",
+    },
+    {
+      question: "What type of loft conversion suits a 1930s semi in St Albans?",
+      answer: "A rear dormer is the most popular choice for 1930s semis in St Albans. It creates full standing headroom and enough space for a double bedroom with en-suite. Many St Albans semis qualify under permitted development so no planning permission is needed, but we check this during your free site survey.",
+    },
+    {
+      question: "How much does a house extension cost in St Albans?",
+      answer: "A single-storey rear extension in St Albans typically costs between £35,000 and £55,000 depending on size and specification. Costs can be slightly higher than surrounding areas because many St Albans properties require heritage-sensitive materials to match existing brickwork and rooflines. We provide a detailed fixed-price quotation after your free site survey — the price we quote is the price you pay.",
+    },
+    {
+      question: "Do you work on Georgian and Victorian properties in St Albans?",
+      answer: "Yes. We regularly work on older properties around St Albans including Georgian townhouses near the cathedral and Victorian terraces in the city centre. These properties often need underpinning, specialist brickwork, and careful structural engineering — all of which our team handles in-house.",
+    },
+  ],
+  "Watford": [
+    {
+      question: "What challenges do Victorian terraces in Watford present for extensions?",
+      answer: "Victorian terraces in areas like Nascot Wood and West Watford often have narrow side returns and shallow rear gardens. A side-return extension or rear infill can add significant kitchen and dining space without eating into your garden. We also commonly remove the internal wall between the front and back reception rooms to create an open-plan layout with structural steelwork.",
+    },
+    {
+      question: "Do I need a party wall agreement for an extension in Watford?",
+      answer: "If your extension is being built on or near a shared boundary — which covers most terraced and semi-detached houses in Watford — yes, you will need a party wall agreement with your neighbour. We guide you through the process and can recommend experienced party wall surveyors in the Watford area.",
+    },
+    {
+      question: "How long does a full house renovation take in Watford?",
+      answer: "A full house renovation including kitchen, bathroom, and extension typically takes 16-22 weeks. For a standalone kitchen or bathroom renovation, expect 2-4 weeks. We provide a detailed project timeline in your quotation and keep you updated with regular progress photos.",
+    },
+    {
+      question: "Can you convert a loft on a post-war semi in Watford?",
+      answer: "Yes. Post-war semis — common across Watford estates built in the 1950s-1970s — usually have enough ridge height for a dormer loft conversion. We assess the existing roof structure, floor joists, and head height during your free site survey to confirm what is possible.",
+    },
+  ],
+  "Edgware": [
+    {
+      question: "Can I build a double-storey extension on my Edgware home?",
+      answer: "Many detached and semi-detached homes in Edgware have the plot size and garden depth to support a double-storey rear extension. Permitted development allows certain double-storey extensions without planning permission, but the rear wall cannot extend more than 3 metres and must be at least 7 metres from the rear boundary. We check all of this during your free site survey.",
+    },
+    {
+      question: "What if my Edgware property has narrow side access?",
+      answer: "Narrow side access is common in Edgware, especially on properties around Burnt Oak and Broadfields. We plan deliveries and skip placement carefully to avoid disrupting neighbours. For very tight access, we use smaller equipment and stage materials in phases. This is something we assess and plan for before work starts.",
+    },
+    {
+      question: "How much does a bathroom renovation cost in Edgware?",
+      answer: "A full bathroom renovation in Edgware typically costs between £5,000 and £15,000 depending on the size and specification. This includes strip-out, plumbing, tiling, fixture installation, and finishing. Premium finishes with underfloor heating cost more. We provide a fixed-price quotation with no hidden costs.",
+    },
+    {
+      question: "Do you handle all trades for a renovation in Edgware?",
+      answer: "Yes. Our in-house team handles every trade — plumbing, electrics, plastering, tiling, carpentry, and decorating. You deal with one team from start to finish. No subcontractors turning up unannounced.",
+    },
+  ],
+  "Stanmore": [
+    {
+      question: "Are double-storey extensions popular in Stanmore?",
+      answer: "Very. Stanmore has a high proportion of larger detached and semi-detached family homes where a double-storey extension adds serious value — often £100,000+ in property value for a £60,000-75,000 build cost. Many homeowners in Stanmore combine a ground-floor kitchen extension with an additional bedroom and en-suite above.",
+    },
+    {
+      question: "Can you convert the loft on a detached house in Stanmore?",
+      answer: "Yes. Detached homes in Stanmore — particularly the larger executive-style properties around Bentley Priory and Canons Park — often have excellent loft conversion potential. Hip-to-gable conversions are popular as they maximise usable space by squaring off the sloping roof ends. We assess feasibility during your free site survey.",
+    },
+    {
+      question: "How do you manage larger renovation projects in Stanmore?",
+      answer: "For larger projects — say a full extension plus loft conversion plus kitchen and bathrooms — Besart personally manages the programme of works, sequencing each trade so there is no downtime. We provide a detailed project plan before starting and keep you updated with weekly progress reports and photos.",
+    },
+    {
+      question: "Do I need planning permission for a rear extension in Stanmore?",
+      answer: "Many single-storey rear extensions in Stanmore fall under permitted development rights. However, if your home is in a conservation area or if the extension exceeds the size limits (4m for detached, 3m for semi-detached), a full planning application is needed. We handle all of this for you.",
+    },
+  ],
+  "Barnet": [
+    {
+      question: "Are there planning restrictions for extensions in Barnet conservation areas?",
+      answer: "Yes. Parts of Barnet — including Monken Hadley, Chipping Barnet High Street, and areas around the Old Courthouse — are conservation areas where permitted development rights are removed or restricted. You will need a full planning application, and the design must respect the character of the area. We have experience navigating Barnet Council's planning requirements.",
+    },
+    {
+      question: "What type of extension works best on an Edwardian semi in Barnet?",
+      answer: "Edwardian semis in Barnet typically suit a rear extension — either single or double storey — that opens up the kitchen-dining area into the garden. Many homeowners also combine this with a side-return extension to maximise the ground floor. Structural steelwork removes the internal walls while maintaining the property's character.",
+    },
+    {
+      question: "How much does a loft conversion cost in Barnet?",
+      answer: "A dormer loft conversion in Barnet typically costs between £38,000 and £55,000. Hip-to-gable conversions on semi-detached homes cost slightly more at £45,000 to £65,000. The exact price depends on the roof structure, access, and your specification. We provide a detailed fixed-price quotation after your free site survey.",
+    },
+    {
+      question: "Do you work on 1930s detached properties in Barnet?",
+      answer: "Yes. 1930s detached homes are one of the most common property types we work on in Barnet. They typically have good-sized plots that allow for generous rear and side extensions, and the original roof structure usually accommodates a loft conversion well.",
+    },
+  ],
+  "Harrow": [
+    {
+      question: "Does Harrow's hilly terrain affect extension foundations?",
+      answer: "It can. Properties on sloping ground — particularly around Harrow on the Hill — sometimes need deeper foundations or stepped footings to reach stable ground. Mature tree roots near the building line can also affect foundation depth. Our structural engineer assesses ground conditions during your site survey and designs the foundations accordingly.",
+    },
+    {
+      question: "Can I extend a Victorian terrace near Harrow town centre?",
+      answer: "Yes. Victorian terraces around Harrow town centre often benefit from rear extensions and loft conversions. Side-return infills are popular for opening up narrow kitchen layouts. You will likely need a party wall agreement with your neighbours, which we guide you through.",
+    },
+    {
+      question: "How long does a kitchen fitting take in Harrow?",
+      answer: "A typical kitchen fitting takes 2-3 weeks including strip-out, plumbing, electrics, unit installation, worktop fitting, tiling, and finishing. If the kitchen is part of a larger extension project, we schedule the kitchen install towards the end so the new space is watertight and plastered first.",
+    },
+    {
+      question: "What is included in your fixed-price quotation?",
+      answer: "Everything. Our quotation covers all materials, labour, structural engineering fees, building control fees, skip hire, and scaffolding. There are no hidden extras. If something unexpected arises — like discovering asbestos or rotten joists — we discuss it with you before any additional costs are agreed.",
+    },
+  ],
+  "Wembley": [
+    {
+      question: "Do I need a party wall agreement for building work in Wembley?",
+      answer: "Almost certainly. Wembley is predominantly terraced and semi-detached housing, which means most extensions and loft conversions will affect a shared wall or boundary. A party wall agreement is a legal requirement under the Party Wall Act 1996. We guide you through the notice process and can recommend local party wall surveyors.",
+    },
+    {
+      question: "What type of extensions work on 1930s semis in Wembley?",
+      answer: "The most popular option for 1930s semis in Wembley is a single-storey rear extension that opens up the kitchen-dining area — typically 3-4 metres deep. Many homeowners also convert the loft at the same time, creating a new bedroom and en-suite above. Combining both projects saves on scaffolding and overall build time.",
+    },
+    {
+      question: "Can you renovate a flat in Wembley?",
+      answer: "Yes. We have recently completed a full flat renovation in HA9 including plastering, tiling, kitchen, bathroom, electrical and plumbing work. Flat renovations require careful coordination of trades to minimise disruption to neighbours. We manage the entire process and keep the site tidy throughout.",
+    },
+    {
+      question: "How much does an extension cost in Wembley?",
+      answer: "A single-storey rear extension in Wembley typically costs between £30,000 and £48,000 depending on size and specification. Double-storey extensions range from £45,000 to £70,000. We provide free site surveys and fixed-price quotations — the price we quote is the price you pay.",
+    },
+  ],
+  "Wood Green": [
+    {
+      question: "What adds the most value to a Victorian terrace in Wood Green?",
+      answer: "A rear extension combined with a loft conversion typically adds the most value per pound spent. Victorian terraces in Wood Green often have untapped potential — opening up the ground floor into a modern kitchen-diner and adding a loft bedroom with en-suite can add significant value. Many of our Wood Green clients do both projects together to save on costs.",
+    },
+    {
+      question: "Are there planning restrictions in the Noel Park Conservation Area?",
+      answer: "Yes. If your property is within the Noel Park Conservation Area in Wood Green, permitted development rights are restricted. Extensions and alterations visible from the street may need planning permission, and designs must respect the original architecture. We have experience working within these restrictions and handle all planning applications.",
+    },
+    {
+      question: "Can you convert a loft on a Victorian terrace in Wood Green?",
+      answer: "Yes. Most Victorian terraces in Wood Green have enough ridge height for a rear dormer loft conversion, which creates a full bedroom with en-suite bathroom. Many qualify under permitted development so no planning permission is needed — unless you are in a conservation area. We confirm this during your free site survey.",
+    },
+    {
+      question: "Do you work on ex-council properties in Wood Green?",
+      answer: "Yes. We regularly work on ex-council flats and houses across Wood Green. Common projects include full bathroom and kitchen renovations, plastering, and decorating. Our team handles every trade in-house so you get consistent quality throughout.",
+    },
+  ],
+};
+
 function getLocationFaqs(location: string) {
-  return [
+  return locationFaqs[location] || [
     {
       question: `How much does a house extension cost in ${location}?`,
       answer: `Extension costs in ${location} vary depending on size, complexity, and specification. A single-storey rear extension typically ranges from £30,000 to £50,000, while double-storey extensions range from £45,000 to £75,000. We provide free site surveys and detailed fixed-price quotations with no hidden costs.`,

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { TrustBar } from "@/components/TrustBar";
+import { reviews } from "@/data/reviews";
 
 export const metadata: Metadata = {
   title: "Builders in Hertfordshire | Extensions & Lofts | BBBrother",
@@ -370,20 +371,32 @@ export default function HomePage() {
 
       {/* Checkatrade Reviews */}
       <section className="bg-surface-container-low py-20 md:py-28 mb-20 md:mb-28">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <div className="text-secondary text-5xl mb-6">&ldquo;</div>
-          <blockquote className="font-body text-xl md:text-2xl font-medium leading-relaxed italic text-primary mb-8">
-            BBBrotherBuilding transformed our home beyond our wildest expectations. Their
-            attention to detail and project management made the entire process stress-free.
-          </blockquote>
-          <div>
-            <p className="font-headline font-bold text-lg">Checkatrade Verified Review</p>
-            <p className="font-label text-xs uppercase tracking-widest text-secondary mt-1 flex items-center justify-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-              10/10 on Checkatrade
-            </p>
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="font-headline text-3xl md:text-4xl font-black text-primary mb-4 tracking-tight text-center">
+            What Our Customers Say
+          </h2>
+          <p className="text-center text-charcoal mb-12 max-w-xl mx-auto">
+            Every review below is from a real Checkatrade customer. We don&apos;t cherry-pick — these are our most recent ratings.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            {reviews.map((review, i) => (
+              <div key={i} className="bg-white rounded-lg p-8 shadow-sm border border-outline-variant/20">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="font-headline font-black text-2xl text-secondary">{review.rating}/10</span>
+                  {review.verified && (
+                    <span className="font-label text-[10px] uppercase tracking-widest text-secondary flex items-center gap-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" className="text-secondary"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                      Verified
+                    </span>
+                  )}
+                </div>
+                <h3 className="font-headline font-bold text-primary mb-3">{review.title}</h3>
+                <p className="text-charcoal text-base leading-relaxed mb-4">{review.text}</p>
+                <p className="font-label text-xs text-muted">Job location: {review.jobLocation}</p>
+              </div>
+            ))}
           </div>
-          <div className="mt-8">
+          <div className="text-center">
             <a
               href="https://www.checkatrade.com/trades/bbbrotherbuildingltd"
               target="_blank"

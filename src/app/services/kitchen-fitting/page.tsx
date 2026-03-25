@@ -61,20 +61,35 @@ export default function KitchenFittingPage() {
         { src: "/images/interior_kitchen_sink_gold_tap_marble.webp", alt: "Kitchen sink with gold tap and marble worktop in Hertfordshire" },
         { src: "/images/interior_kitchen_hob_extractor_tiling_backsplash.webp", alt: "Kitchen hob, extractor and tiling backsplash fitted by BBBrotherBuilding" },
       ]}
+      review={{
+        rating: 10,
+        title: "This company is very good — I strongly recommend, 10/10",
+        text: "I had a whole renovation of my flat from BBBrother Building including plastering, tiles, kitchen, bathroom and electrical and plumbing work. They were very good to deal with, very understanding and hard working. Always made sure and kept me up to date with everything they were doing. I strongly recommend this company. Top job and trustworthy people. 10/10.",
+        jobLocation: "HA9",
+        verified: false,
+      }}
       ctaTitle="Ready to Transform Your Kitchen?"
       ctaDescription="Get a free site survey and fixed-price quotation for your kitchen fitting. No obligation, no hidden costs."
       faqs={[
         {
           question: "How long does a kitchen fitting take?",
-          answer: "A typical kitchen fitting takes 2-3 weeks including strip-out, plumbing, electrics, unit installation, worktop fitting, tiling, and finishing. We provide a detailed timeline in your quotation.",
+          answer: "A straightforward kitchen replacement takes 2-3 weeks. This covers strip-out, first-fix plumbing and electrics, unit installation, worktop templating and fitting, tiling, second-fix, and snagging. If the kitchen is part of a larger extension or involves wall removal, the kitchen install happens in the final 2-3 weeks once the new space is plastered and ready.",
         },
         {
-          question: "Can you fit a kitchen I've already purchased?",
-          answer: "Yes, we fit kitchens from all major suppliers including Howdens, Wickes, IKEA, and bespoke manufacturers. We also supply and fit complete kitchens if preferred.",
+          question: "Can you fit a kitchen I have already purchased?",
+          answer: "Yes. We regularly fit kitchens from Howdens, Wickes, IKEA, Wren, Magnet, and bespoke manufacturers. We review your kitchen plan and delivery schedule before starting, and coordinate so units arrive when we are ready to install. If you haven't purchased yet, we can advise on suppliers that offer good value at different budget levels.",
         },
         {
-          question: "Do you handle all electrical and plumbing work?",
-          answer: "Yes. Our in-house team handles all plumbing, electrics, gas connections, tiling, and finishing work. One team, one point of contact, no subcontractor surprises.",
+          question: "Do I need to move out during a kitchen fitting?",
+          answer: "No. We set up a temporary kitchen area — usually in your living room or utility room — with your kettle, microwave, and a temporary water supply for washing up. We keep the work area contained and tidy at the end of each day. Most clients live at home throughout the project.",
+        },
+        {
+          question: "What worktop materials do you recommend?",
+          answer: "Quartz (e.g. Silestone, Caesarstone) is the most popular choice — it is durable, low-maintenance, and comes in a wide range of colours. Granite offers a natural stone look with excellent heat resistance. Laminate has improved dramatically and offers great value. We template all worktops on-site once the units are level to ensure a perfect fit.",
+        },
+        {
+          question: "Can you remove a wall to create an open-plan kitchen?",
+          answer: "Yes. If the wall is load-bearing, we install an RSJ steel beam to carry the load above — our structural engineer calculates the exact specification. This is one of the most popular kitchen upgrades we do, and it dramatically transforms the feel of the ground floor. Building control sign-off is included in our quotation.",
         },
       ]}
     />

@@ -85,23 +85,40 @@ export default function ExtensionsPage() {
         { src: "/images/exterior_extension_roof_guttering_system.webp", alt: "Extension roof and guttering system completed in Hertfordshire" },
         { src: "/images/exterior_extension_brickwork_roof_line_wide.webp", alt: "Wide view of extension brickwork and roof line by BBBrotherBuilding" },
       ]}
+      review={{
+        rating: 10,
+        title: "Excellent work from start to finish",
+        text: "Excellent work carried out on our property. The team handled the bathroom, tiling, loft conversion and extension, and the quality of workmanship was excellent throughout. Everything was well organised, completed as agreed, and finished to a very high standard. They were punctual, respectful, and communicated clearly from start to finish. The final result exceeded our expectations.",
+        jobLocation: "NW4",
+        verified: true,
+      }}
       ctaTitle="Ready to Extend Your Home?"
       ctaDescription="Get a free site survey and fixed-price quotation for your house extension. No obligation, no hidden costs."
       faqs={[
         {
           question: "Do I need planning permission for a house extension?",
           answer:
-            "Many single storey rear extensions fall under permitted development rights and do not require planning permission. However, this depends on the size, height, and proximity to boundaries. Double storey extensions typically require a full planning permission application. We assess your property during the free consultation and handle all applications if needed.",
+            "It depends on the size and type. Single-storey rear extensions up to 4 metres deep (detached) or 3 metres (semi/terrace) usually fall under permitted development and do not need planning permission. Double-storey extensions almost always need a full application. Properties in conservation areas often have additional restrictions. We check all of this during your free site survey and handle the application if one is required.",
         },
         {
-          question: "What is a party wall agreement and do I need one?",
+          question: "What is a party wall agreement and when do I need one?",
           answer:
-            "A party wall agreement is a legal notice required when building work affects a shared wall or boundary with a neighbour. Most extensions require one. We guide you through the entire party wall process and can recommend experienced party wall surveyors.",
+            "A party wall agreement is a legal notice required under the Party Wall Act 1996 when your extension is built on or within 3-6 metres of a shared boundary. This applies to most semi-detached and terraced houses. You must serve notice on your neighbours at least two months before starting work on the boundary wall, or one month for excavation near the boundary. We guide you through the process and can recommend experienced surveyors.",
         },
         {
           question: "How much does a house extension cost in Hertfordshire?",
           answer:
-            "A single-storey rear extension typically costs between £30,000 and £50,000 depending on size and specification. Double storey extensions range from £45,000 to £75,000. We provide free site surveys and detailed fixed-price quotations with no hidden costs.",
+            "A single-storey rear extension typically costs £35,000-£55,000, while a double-storey extension ranges from £50,000-£80,000. The final price depends on size, ground conditions, structural complexity, and your choice of finishes. Our quotation is fixed-price and itemised — it includes foundations, structural steelwork, building control fees, scaffolding, and skip hire. No hidden costs.",
+        },
+        {
+          question: "What is an RSJ steel beam and will my extension need one?",
+          answer:
+            "An RSJ (Rolled Steel Joist) is a structural steel beam used to support the load above when internal or external walls are removed. Almost every extension that opens into the existing house needs at least one RSJ. Our structural engineer calculates the exact size and specification required, and we handle installation as part of the build. The cost is included in your quotation.",
+        },
+        {
+          question: "How long will the extension take from start to finish?",
+          answer:
+            "A single-storey rear extension typically takes 10-14 weeks. A double-storey extension takes 14-20 weeks. These timelines include groundwork, foundations, brickwork, roofing, first-fix plumbing and electrics, plastering, second-fix, and finishing. Weather and planning approval can affect timelines — we build realistic buffers into every project plan.",
         },
       ]}
     />
