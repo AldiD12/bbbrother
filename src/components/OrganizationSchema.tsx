@@ -9,8 +9,10 @@ export function OrganizationSchema() {
     email: "bledar@bbbrotherbuilding.co.uk",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Borehamwood",
-      addressRegion: "Hertfordshire",
+      streetAddress: "11 Barkham Mews",
+      addressLocality: "Reading",
+      addressRegion: "Berkshire",
+      postalCode: "RG1 4BX",
       addressCountry: "GB",
     },
     logo: "https://bbbrotherbuilding.co.uk/images/logo.png",

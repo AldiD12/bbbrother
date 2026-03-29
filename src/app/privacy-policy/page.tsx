@@ -40,8 +40,9 @@ export default function PrivacyPolicyPage() {
               </h2>
               <p>
                 BBBrotherBuilding Ltd (Companies House #16950486) is a building
-                contractor based in Borehamwood, Hertfordshire. We are the data
-                controller for personal information collected through this website.
+                contractor. Registered Office: 11 Barkham Mews, Reading, RG1 4BX.
+                Operations Office: 31 Arundel Drive, Borehamwood, WD6 2LE.
+                We are the data controller for personal information collected through this website.
               </p>
               <p className="mt-2">
                 Contact: bledar@bbbrotherbuilding.co.uk | 07925 921 222

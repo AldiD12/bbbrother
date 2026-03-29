@@ -453,7 +453,7 @@ export default function HomePage() {
             Areas We Cover
           </h2>
           <p className="text-center text-charcoal mb-10 max-w-xl mx-auto">
-            Based in Borehamwood, Hertfordshire — serving Hertfordshire &amp; North West London
+            Based at 31 Arundel Drive, Borehamwood — serving Hertfordshire &amp; North West London
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {areas.map((area) => (

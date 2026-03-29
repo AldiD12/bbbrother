@@ -98,12 +98,27 @@ export default function ContactPage() {
             {/* Location */}
             <div>
               <span className="font-label font-bold uppercase tracking-widest text-xs text-secondary mb-2 block">
-                Based In
+                Registered Office
               </span>
               <p className="font-headline font-bold text-lg text-primary">
-                Borehamwood, Hertfordshire
+                11 Barkham Mews
               </p>
-              <p className="text-charcoal text-base mt-1">
+              <p className="text-charcoal text-base">
+                Reading, RG1 4BX
+              </p>
+            </div>
+
+            <div>
+              <span className="font-label font-bold uppercase tracking-widest text-xs text-secondary mb-2 block">
+                Operations Office
+              </span>
+              <p className="font-headline font-bold text-lg text-primary">
+                31 Arundel Drive
+              </p>
+              <p className="text-charcoal text-base">
+                Borehamwood, WD6 2LE
+              </p>
+              <p className="text-charcoal/70 text-sm mt-1">
                 Serving Hertfordshire &amp; North West London
               </p>
             </div>

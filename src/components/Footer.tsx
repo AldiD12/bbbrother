@@ -40,8 +40,11 @@ export function Footer() {
             <p className="text-white/70 font-body text-sm leading-relaxed mb-4">
               Trusted builders in Hertfordshire &amp; North West London. Extensions, loft conversions, and complete home transformations.
             </p>
+            <p className="text-white/50 text-xs font-label mb-1">
+              Registered Office: 11 Barkham Mews, Reading, RG1 4BX
+            </p>
             <p className="text-white/50 text-xs font-label">
-              Based in Borehamwood, Hertfordshire
+              Operations Office: 31 Arundel Drive, Borehamwood, WD6 2LE
             </p>
           </div>
 
