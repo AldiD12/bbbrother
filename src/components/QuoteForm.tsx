@@ -50,7 +50,7 @@ export function QuoteForm() {
       }
       setSubmitted(true);
     } catch {
-      setError("Could not send your enquiry. Please call us on 07925 921 222 or try again.");
+      setError("Could not send your enquiry. Please call us on 07530 133 865 or try again.");
       setSubmitting(false);
     }
   }
@@ -67,8 +67,8 @@ export function QuoteForm() {
         <p className="text-base text-charcoal leading-relaxed">
           We&apos;ve received your enquiry and will be in touch within 24 hours. For
           an immediate response, call us on{" "}
-          <a href="tel:07925921222" className="text-secondary font-bold">
-            07925 921 222
+          <a href="tel:07530133865" className="text-secondary font-bold">
+            07530 133 865
           </a>
           .
         </p>
@@ -162,7 +162,7 @@ export function QuoteForm() {
             Tell us about your project
           </h3>
           <p className="text-base text-muted mb-6">
-            You can also send us photos via WhatsApp at 07925 921 222.
+            You can also send us photos via WhatsApp at 07530 133 865.
           </p>
           <textarea
             value={formData.message}

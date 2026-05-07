@@ -164,10 +164,10 @@ export default function ServicesPage() {
               Get a Free Quote
             </Link>
             <a
-              href="tel:07925921222"
+              href="tel:07530133865"
               className="border-2 border-white text-white font-label font-bold py-4 px-10 rounded-full inline-block transition-colors hover:bg-white hover:text-primary"
             >
-              Call 07925 921 222
+              Call 07530 133 865
             </a>
           </div>
         </div>

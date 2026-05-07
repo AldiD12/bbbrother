@@ -31,11 +31,11 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/logo-bbbrotherbuilding.png"
+              src="/bbbrotherbuilding.jpeg"
               alt="BBBrother Building Logo"
-              width={140}
-              height={52}
-              className="h-10 w-auto mb-4 brightness-0 invert"
+              width={80}
+              height={80}
+              className="h-16 w-16 mb-4 rounded-md object-cover"
             />
             <p className="text-white/70 font-body text-sm leading-relaxed mb-4">
               Trusted builders in Hertfordshire &amp; North West London. Extensions, loft conversions, and complete home transformations.
@@ -91,11 +91,11 @@ export function Footer() {
             </span>
             <div className="flex flex-col gap-3">
               <a
-                href="tel:07925921222"
+                href="tel:07530133865"
                 className="text-white/70 text-sm hover:text-secondary transition-colors"
-                aria-label="Call BBBrotherBuilding on 07925 921 222"
+                aria-label="Call BBBrotherBuilding on 07530 133 865"
               >
-                07925 921 222
+                07530 133 865
               </a>
               <a
                 href="mailto:bledar@bbbrotherbuilding.co.uk"

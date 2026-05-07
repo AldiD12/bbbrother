@@ -5,7 +5,7 @@ export function OrganizationSchema() {
     "@id": "https://bbbrotherbuilding.co.uk/#organization",
     name: "BBBrotherBuilding Ltd",
     url: "https://bbbrotherbuilding.co.uk",
-    telephone: "+447925921222",
+    telephone: "+447530133865",
     email: "bledar@bbbrotherbuilding.co.uk",
     address: {
       "@type": "PostalAddress",

@@ -45,7 +45,7 @@ export default function PrivacyPolicyPage() {
                 We are the data controller for personal information collected through this website.
               </p>
               <p className="mt-2">
-                Contact: bledar@bbbrotherbuilding.co.uk | 07925 921 222
+                Contact: bledar@bbbrotherbuilding.co.uk | 07530 133 865
               </p>
             </div>
 

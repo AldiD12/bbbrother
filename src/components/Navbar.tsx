@@ -21,11 +21,11 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo-bbbrotherbuilding.png"
+            src="/bbbrotherbuilding.jpeg"
             alt="BBBrother Building Logo"
-            width={160}
-            height={60}
-            className="h-12 w-auto"
+            width={52}
+            height={52}
+            className="h-12 w-12 rounded-md object-cover"
             priority
           />
         </Link>
