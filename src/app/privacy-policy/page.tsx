@@ -44,7 +44,7 @@ export default function PrivacyPolicyPage() {
                 controller for personal information collected through this website.
               </p>
               <p className="mt-2">
-                Contact: bledar@bbbrotherbuilding.co.uk | 07925 921 222
+                Contact: bledar@bbbrotherbuilding.co.uk | 07475 268 206
               </p>
             </div>
 

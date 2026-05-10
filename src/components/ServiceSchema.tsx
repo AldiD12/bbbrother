@@ -20,7 +20,7 @@ export function ServiceSchema({ serviceType, description, url }: ServiceSchemaPr
     provider: {
       "@type": "GeneralContractor",
       name: "BBBrotherBuilding Ltd",
-      telephone: "+447925921222",
+      telephone: "+447475268206",
       url: "https://bbbrotherbuilding.co.uk",
     },
     areaServed: [

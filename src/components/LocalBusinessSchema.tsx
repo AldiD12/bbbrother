@@ -9,7 +9,7 @@ export function LocalBusinessSchema({ location }: LocalBusinessSchemaProps) {
     "@context": "https://schema.org",
     "@type": "GeneralContractor",
     name: "BBBrotherBuilding Ltd",
-    telephone: "+447925921222",
+    telephone: "+447475268206",
     email: "bledar@bbbrotherbuilding.co.uk",
     url: `https://bbbrotherbuilding.co.uk/locations/${location.slug}`,
     description: "Family-run building company in Hertfordshire specializing in extensions, loft conversions, bathrooms, and complete renovations.",
