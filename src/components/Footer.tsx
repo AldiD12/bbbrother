@@ -91,11 +91,11 @@ export function Footer() {
             </span>
             <div className="flex flex-col gap-3">
               <a
-                href="tel:07530133865"
+                href="tel:07475268206"
                 className="text-white/70 text-sm hover:text-secondary transition-colors"
-                aria-label="Call BBBrotherBuilding on 07530 133 865"
+                aria-label="Call BBBrotherBuilding on 07475 268 206"
               >
-                07530 133 865
+                07475 268 206
               </a>
               <a
                 href="mailto:bledar@bbbrotherbuilding.co.uk"

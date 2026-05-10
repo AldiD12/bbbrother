@@ -6,7 +6,7 @@ export function MobileStickyFooter() {
   return (
     <div className="fixed bottom-0 left-0 w-full grid grid-cols-2 md:hidden z-50 shadow-[0_-4px_20px_0_rgba(0,0,0,0.1)]">
       <a
-        href="https://wa.me/447530133865"
+        href="https://wa.me/447475268206"
         onClick={trackWhatsAppClick}
         className="flex flex-col items-center justify-center py-3 bg-[#25D366] text-white active:scale-95 transition-transform"
         aria-label="Message us on WhatsApp"
@@ -17,7 +17,7 @@ export function MobileStickyFooter() {
         <span className="font-label text-[10px] uppercase tracking-[0.1em] font-bold">WhatsApp</span>
       </a>
       <a
-        href="tel:07530133865"
+        href="tel:07475268206"
         onClick={trackCallClick}
         className="flex flex-col items-center justify-center bg-secondary text-white py-3 active:scale-95 transition-transform"
         aria-label="Call us now"

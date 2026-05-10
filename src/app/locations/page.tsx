@@ -137,10 +137,10 @@ export default function LocationsPage() {
               Get a Free Quote
             </Link>
             <a
-              href="tel:07530133865"
+              href="tel:07475268206"
               className="border-2 border-white text-white font-label font-bold py-4 px-10 rounded-full inline-block transition-colors hover:bg-white hover:text-primary"
             >
-              Call 07530 133 865
+              Call 07475 268 206
             </a>
           </div>
         </div>
