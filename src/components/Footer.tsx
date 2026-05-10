@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const serviceLinks = [
   { href: "/services/extensions", label: "Extensions" },
@@ -29,14 +30,21 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <div className="text-2xl font-headline font-black text-white mb-4 uppercase tracking-tighter">
-              BBBrotherBuilding
-            </div>
+            <Image
+              src="/bbbrotherbuilding.jpeg"
+              alt="BBBrother Building Logo"
+              width={80}
+              height={80}
+              className="h-16 w-16 mb-4 rounded-md object-cover"
+            />
             <p className="text-white/70 font-body text-sm leading-relaxed mb-4">
               Trusted builders in Hertfordshire &amp; North West London. Extensions, loft conversions, and complete home transformations.
             </p>
+            <p className="text-white/50 text-xs font-label mb-1">
+              Registered Office: 11 Barkham Mews, Reading, RG1 4BX
+            </p>
             <p className="text-white/50 text-xs font-label">
-              Based in Borehamwood, Hertfordshire
+              Operations Office: 31 Arundel Drive, Borehamwood, WD6 2LE
             </p>
           </div>
 

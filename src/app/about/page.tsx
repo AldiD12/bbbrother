@@ -151,7 +151,7 @@ export default function AboutPage() {
           <div className="space-y-6 text-lg text-charcoal leading-relaxed">
             <p>
               BBBrotherBuilding Ltd is a family-run building company established
-              by Besart, based in Borehamwood, Hertfordshire. With over 12 years
+              by Besart, operating from Borehamwood, Hertfordshire. With over 12 years
               of hands-on experience in extensions, loft conversions, and full
               home renovations, we have built a reputation that homeowners across
               Hertfordshire and North West London trust.

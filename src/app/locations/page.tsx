@@ -43,7 +43,7 @@ export default function LocationsPage() {
             <span className="text-secondary italic">Cover</span>
           </h1>
           <p className="text-lg text-charcoal leading-relaxed max-w-2xl mx-auto">
-            Based in Borehamwood, Hertfordshire — proudly serving homeowners
+            Based at 31 Arundel Drive, Borehamwood — proudly serving homeowners
             across Hertfordshire and North West London.
           </p>
         </div>

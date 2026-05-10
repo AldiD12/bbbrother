@@ -17,9 +17,23 @@ export function LocalBusinessSchema({ location }: LocalBusinessSchemaProps) {
     foundingDate: "2013",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Borehamwood",
-      addressRegion: "Hertfordshire",
+      streetAddress: "11 Barkham Mews",
+      addressLocality: "Reading",
+      addressRegion: "Berkshire",
+      postalCode: "RG1 4BX",
       addressCountry: "GB",
+    },
+    location: {
+      "@type": "Place",
+      name: "BBBrotherBuilding Operations Office",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "31 Arundel Drive",
+        addressLocality: "Borehamwood",
+        addressRegion: "Hertfordshire",
+        postalCode: "WD6 2LE",
+        addressCountry: "GB",
+      },
     },
     sameAs: [
       "https://www.checkatrade.com/trades/bbbrotherbuildingltd",
